@@ -1,4 +1,4 @@
-# Change Blindness in Hierachical Stimuli 
+# Change Blindness in Hierachical Stimuli
 
 ## Psychology of perception practicum 
 
