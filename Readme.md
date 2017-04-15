@@ -8,6 +8,14 @@
 	* Letters: Vector graphics for hierarchical letters.
 	* Samples: Sample bitmaps generated from SVGs. 
 
-
+* **Scripts**: Python notebooks to process stimuli data
+	* LoadStimuliTable: load all stimuli from a dir into a CSV file. 
+	* GenTrials: generates all possible trials from a stimuli set file.
+	
+* **Experiments**: Experiment definitions
+	* CSVs and Excel sheets: experiments trial sets. 
+	* ES Files: E-Prime experiment designs.
+	
+	
 
 
