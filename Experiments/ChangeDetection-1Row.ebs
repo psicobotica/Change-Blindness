@@ -1,0 +1,1683 @@
+'
+'
+'
+'	C:\Users\Raul\Documents\My Experiments\ChangeDetection-1Row.ebs
+'	Generated on: 4/16/2017	13:30:17
+'
+'
+'	This file generated with E-Studio interface.
+'	E-Prime Copyright © 1996-2005 Psychology Software Tools.
+'	ALL RIGHTS RESERVED
+'
+'	Legal use of this experiment script requires a full E-Prime or Runtime License.
+'
+'
+'	Author:
+'		Raul (uned)
+'
+'
+'
+'
+
+Option CStrings On
+Dim ebContext as Context
+
+
+'--------------------------------------------------------------------------
+' Class Declarations
+'--------------------------------------------------------------------------
+
+
+
+'--------------------------------------------------------------------------
+'InitTextDisplayDefaults
+'--------------------------------------------------------------------------
+Sub InitTextDisplayDefaults(theTextDisplay As TextDisplay)
+
+	If theTextDisplay Is Nothing Then Exit Sub
+
+	theTextDisplay.X = "center"
+	theTextDisplay.Y = "center"
+	theTextDisplay.Width = "100%"
+	theTextDisplay.Height = "100%"
+	theTextDisplay.ForeColor = CColor("black")
+	theTextDisplay.BackColor = CColor("white")
+	theTextDisplay.BackStyle = "opaque"
+	theTextDisplay.BorderColor = CColor("black")
+	theTextDisplay.BorderWidth = CLng("0")
+	theTextDisplay.XAlign = "center"
+	theTextDisplay.YAlign = "center"
+	theTextDisplay.AlignHorizontal = "center"
+	theTextDisplay.AlignVertical = "center"
+	theTextDisplay.WordWrap = True
+	theTextDisplay.ClearAfter = CLogical("No")
+	theTextDisplay.FontName = "Courier New"
+	theTextDisplay.FontSize = "18"
+	theTextDisplay.FontBold = CLogical("Yes")
+	theTextDisplay.FontItalic = CLogical("No")
+	theTextDisplay.FontUnderline = CLogical("No")
+	theTextDisplay.FontStrikeout = CLogical("No")
+
+End Sub
+
+
+
+
+
+
+
+'--------------------------------------------------------------------------
+'InitSlideStateDefaults
+'--------------------------------------------------------------------------
+Sub InitSlideStateDefaults(theSlideState As SlideState)
+
+	If theSlideState Is Nothing Then Exit Sub
+
+	theSlideState.X = "center"
+	theSlideState.Y = "center"
+	theSlideState.Width = "100%"
+	theSlideState.Height = "100%"
+	theSlideState.BackColor = CColor("white")
+	theSlideState.BackStyle = "opaque"
+	theSlideState.BorderColor = CColor("black")
+	theSlideState.BorderWidth = CLng("0")
+	theSlideState.XAlign = "center"
+	theSlideState.YAlign = "center"
+	theSlideState.ClearAfter = CLogical("No")
+	theSlideState.Enabled = CLogical("Yes")
+
+End Sub
+
+'--------------------------------------------------------------------------
+'InitSlideVisualStimDefaults
+'--------------------------------------------------------------------------
+Sub InitSlideVisualStimDefaults(theSlideVisualStim As SlideVisualStim)
+
+	If theSlideVisualStim Is Nothing Then Exit Sub
+
+	theSlideVisualStim.X = "center"
+	theSlideVisualStim.Y = "center"
+	theSlideVisualStim.Width = "25%"
+	theSlideVisualStim.Height = "25%"
+	theSlideVisualStim.ForeColor = CColor("black")
+	theSlideVisualStim.BackColor = CColor("white")
+	theSlideVisualStim.BackStyle = "opaque"
+	theSlideVisualStim.BorderColor = CColor("black")
+	theSlideVisualStim.BorderWidth = CLng("0")
+	theSlideVisualStim.XAlign = "center"
+	theSlideVisualStim.YAlign = "center"
+	theSlideVisualStim.AlignHorizontal = "center"
+	theSlideVisualStim.AlignVertical = "center"
+
+End Sub
+
+'--------------------------------------------------------------------------
+'InitSlideTextDefaults
+'--------------------------------------------------------------------------
+Sub InitSlideTextDefaults(theSlideText As SlideText)
+
+	If theSlideText Is Nothing Then Exit Sub
+
+	InitSlideVisualStimDefaults theSlideText
+
+	theSlideText.WordWrap = True
+	theSlideText.FontName = "Courier New"
+	theSlideText.FontSize = "18"
+	theSlideText.FontBold = CLogical("Yes")
+	theSlideText.FontItalic = CLogical("No")
+	theSlideText.FontUnderline = CLogical("No")
+	theSlideText.FontStrikeout = CLogical("No")
+
+End Sub
+
+'--------------------------------------------------------------------------
+'InitSlideImageDefaults
+'--------------------------------------------------------------------------
+Sub InitSlideImageDefaults(theSlideImage As SlideImage)
+
+	If theSlideImage Is Nothing Then Exit Sub
+
+	InitSlideVisualStimDefaults theSlideImage
+
+	theSlideImage.Stretch = CLogical("No")
+	theSlideImage.MirrorLeftRight = CLogical("No")
+	theSlideImage.MirrorUpDown = CLogical("No")
+	theSlideImage.UseSourceColorKey = CLogical("No")
+	theSlideImage.SourceColorKey = CColor("black")
+
+End Sub
+
+'--------------------------------------------------------------------------
+'InitSlideSoundBufferDefaults
+'--------------------------------------------------------------------------
+Sub InitSlideSoundBufferDefaults(theSoundBuffer As SoundBuffer)
+
+	If theSoundBuffer Is Nothing Then Exit Sub
+
+	theSoundBuffer.Loop = CLogical("No")
+	theSoundBuffer.StopAfter = CLogical("Yes")
+	theSoundBuffer.StartOffset = "0"
+	theSoundBuffer.StopOffset = "0"
+
+End Sub
+
+
+
+
+
+
+
+
+
+'--------------------------------------------------------------------------
+'InitImageDisplayDefaults
+'--------------------------------------------------------------------------
+Sub InitImageDisplayDefaults(theImageDisplay As ImageDisplay)
+
+	If theImageDisplay Is Nothing Then Exit Sub
+
+	theImageDisplay.X = "center"
+	theImageDisplay.Y = "center"
+	theImageDisplay.Width = "100%"
+	theImageDisplay.Height = "100%"
+	theImageDisplay.BackColor = CColor("black")
+	theImageDisplay.BackStyle = "opaque"
+	theImageDisplay.BorderColor = CColor("black")
+	theImageDisplay.BorderWidth = CLng("0")
+	theImageDisplay.XAlign = "center"
+	theImageDisplay.YAlign = "center"
+	theImageDisplay.AlignHorizontal = "center"
+	theImageDisplay.AlignVertical = "center"
+	theImageDisplay.ClearAfter = CLogical("No")
+	theImageDisplay.UseSourceColorKey = CLogical("No")
+	theImageDisplay.SourceColorKey = CColor("black")
+	theImageDisplay.MirrorLeftRight = CLogical("No")
+	theImageDisplay.MirrorUpDown = CLogical("No")
+	theImageDisplay.Stretch = CLogical("No")
+
+End Sub
+
+
+
+
+
+'--------------------------------------------------------------------------
+' Instance Declarations
+'--------------------------------------------------------------------------
+Dim Display As DisplayDevice
+Dim Sound As SoundDevice
+Dim Keyboard As KeyboardDevice
+Dim Mouse As MouseDevice
+Dim SessionProc As Procedure
+
+Dim Intructions As TextDisplay
+Dim IntructionsEchoClients As EchoClientCollection
+
+Dim blocklistp As List
+
+Dim blockprocp As Procedure
+
+Dim triallistp As List
+
+Dim trialprocp As Procedure
+
+Dim fixation As TextDisplay
+
+Dim ISI As TextDisplay
+
+Dim feedback As FeedbackDisplay
+Dim feedback_State As SlideState
+Dim feedback_SlideText As SlideText
+
+Dim start As TextDisplay
+Dim startEchoClients As EchoClientCollection
+
+Dim blocklist As List
+
+Dim blockproc As Procedure
+
+Dim triallist As List
+
+Dim trialproc As Procedure
+
+Dim intertrial As TextDisplay
+
+Dim break As TextDisplay
+Dim breakEchoClients As EchoClientCollection
+
+Dim bye As TextDisplay
+
+Dim S1Display As ImageDisplay
+
+Dim S2Display As ImageDisplay
+Dim S2DisplayEchoClients As EchoClientCollection
+
+
+
+'--------------------------------------------------------------------------
+' Package Declare Script
+'--------------------------------------------------------------------------
+
+
+
+'--------------------------------------------------------------------------
+' User Script
+'--------------------------------------------------------------------------
+Dim count as Integer
+
+
+'--------------------------------------------------------------------------
+' Package Global Script
+'--------------------------------------------------------------------------
+
+
+
+'--------------------------------------------------------------------------
+' Package Routines
+'--------------------------------------------------------------------------
+
+
+
+'--------------------------------------------------------------------------
+' Implementation
+'--------------------------------------------------------------------------
+Sub SessionProc_Run(c as Context)
+	
+	
+	Intructions.InputMasks.Reset
+	
+	If Keyboard.GetState() = ebStateOpen Then
+		IntructionsEchoClients.RemoveAll
+		Intructions.InputMasks.Add Keyboard.CreateInputMask("{SPACE}", "", CLng(Intructions.Duration), CLng("1"), ebEndResponseActionTerminate, CLogical("Yes"), "", "", "ResponseMode:All ProcessBackspace:Yes")
+
+	
+	End If
+
+	Intructions.Run
+	blocklistp.Run c
+	
+	
+	start.InputMasks.Reset
+	
+	If Keyboard.GetState() = ebStateOpen Then
+		startEchoClients.RemoveAll
+		start.InputMasks.Add Keyboard.CreateInputMask("{SPACE}", "", CLng(start.Duration), CLng("1"), ebEndResponseActionTerminate, CLogical("Yes"), "", "", "ResponseMode:All ProcessBackspace:Yes")
+
+	
+	End If
+
+	start.Run
+	blocklist.Run c
+	
+	bye.Run
+
+	 
+
+
+#If RUNTIME_VERSION_MAJOR > 1  Or (RUNTIME_VERSION_MAJOR = 1 And RUNTIME_VERSION_MINOR >= 2) Then
+	' Log clock timing information
+	c.SetAttrib "Clock.Information", Clock.Information
+#End If
+
+
+	c.Log
+End Sub
+
+Sub blockprocp_Run(c as Context)
+	triallistp.Run c
+
+	c.Log
+End Sub
+
+Sub trialprocp_Run(c as Context)
+	
+	fixation.Run
+	
+	S1Display.Filename = "exp1_images/" &_ 
+				c.GetAttrib("S1") &_ 
+				".bmp"
+	S1Display.Load
+	S1Display.Duration = CLng(c.GetAttrib("S1I"))
+	S1Display.Run
+	
+	ISI.Duration = CLng(c.GetAttrib("ISI"))
+	ISI.Run
+	
+	S2Display.Filename = "exp1_images/" &_ 
+				c.GetAttrib("S2") &_ 
+				".bmp"
+	S2Display.Load
+	
+	S2Display.InputMasks.Reset
+	
+	If Keyboard.GetState() = ebStateOpen Then
+		S2DisplayEchoClients.RemoveAll
+		S2Display.InputMasks.Add Keyboard.CreateInputMask("gln", c.GetAttrib("Correct"), CLng(S2Display.Duration), CLng("1"), ebEndResponseActionTerminate, CLogical("Yes"), "", "", "ResponseMode:All ProcessBackspace:Yes")
+
+	
+	End If
+
+	S2Display.Run
+	c.SetAttrib S2Display.Name & ".OnsetDelay", S2Display.OnsetDelay
+	c.SetAttrib S2Display.Name & ".OnsetTime", S2Display.OnsetTime
+	c.SetAttrib S2Display.Name & ".DurationError", S2Display.DurationError
+	c.SetAttrib S2Display.Name & ".RTTime", S2Display.RTTime
+	c.SetAttrib S2Display.Name & ".ACC", S2Display.ACC
+	c.SetAttrib S2Display.Name & ".RT", S2Display.RT
+	c.SetAttrib S2Display.Name & ".RESP", S2Display.RESP
+	c.SetAttrib S2Display.Name & ".CRESP", S2Display.CRESP
+	
+	
+	
+	If S2Display.ACC = 1 Then
+		'Set the ActiveState to Correct
+		feedback.ActiveState = "Correct"
+
+		'Add an observation to the accuracy stats
+		feedback.AccStats.AddObservation S2Display.Acc
+
+		'Add an observation to the response time stats
+		' unless the user did not respond and the author
+		' does not want us to add the no response RT
+		If Len(S2Display.RESP) > 0 Then
+			feedback.RTStats.AddObservation S2Display.RT
+			feedback.CorrectRTStats.AddObservation S2Display.RT
+		End If
+	Else
+		'Is it incorrect or no response?
+		If Len(S2Display.RESP) > 0 Then
+			'Set the ActiveState to Incorrect
+			feedback.ActiveState = "Incorrect"
+
+			'Set the accuracy stats
+			feedback.AccStats.AddObservation S2Display.Acc
+
+			'Set the RT stats
+			feedback.RTStats.AddObservation S2Display.RT
+			feedback.IncorrectRTStats.AddObservation S2Display.RT
+		Else
+			'Set the ActiveState to NoResponse
+			feedback.ActiveState = "NoResponse"
+
+			'Does the author want to consider a NoResponse
+			' to sum as an incorrect response in the ACC stats?
+			If feedback.CollectNoRespACCStats = True Then
+				feedback.AccStats.AddObservation S2Display.Acc
+			End If
+		End If
+	End If
+
+	Select Case feedback.ActiveState
+		Case "Correct"
+
+
+			Set feedback_SlideText = CSlideText(feedback.States.Item("Correct").Objects(1))
+			feedback_SlideText.Text = "Ha contestado " &_ 
+				c.GetAttrib("Correct") &_ 
+				" en " & _
+		Format$((S2Display.RT / feedback.RTDivisor), feedback.RTFormat) & _
+		" segundos"
+			Set feedback_SlideText = Nothing
+
+			Set feedback_SlideText = CSlideText(feedback.States.Item("Correct").Objects(2))
+			Set feedback_SlideText = Nothing
+		Case "Incorrect"
+
+
+			Set feedback_SlideText = CSlideText(feedback.States.Item("Incorrect").Objects(1))
+			feedback_SlideText.Text = "La respuesta correcta era " &_ 
+				c.GetAttrib("Correct") &_ 
+				".\n\nHa tardado " & _
+		Format$((S2Display.RT / feedback.RTDivisor), feedback.RTFormat) & _
+		" segundos en contestar."
+			Set feedback_SlideText = Nothing
+
+			Set feedback_SlideText = CSlideText(feedback.States.Item("Incorrect").Objects(2))
+			Set feedback_SlideText = Nothing
+		Case "NoResponse"
+
+
+			Set feedback_SlideText = CSlideText(feedback.States.Item("NoResponse").Objects(1))
+			Set feedback_SlideText = Nothing
+		Case "Pending"
+
+	End Select
+
+	
+
+	feedback.Run
+
+	
+	c.SetAttrib S2Display.Name & ".OnsetDelay", S2Display.OnsetDelay
+	c.SetAttrib S2Display.Name & ".OnsetTime", S2Display.OnsetTime
+	c.SetAttrib S2Display.Name & ".DurationError", S2Display.DurationError
+	c.SetAttrib S2Display.Name & ".RTTime", S2Display.RTTime
+	c.SetAttrib S2Display.Name & ".ACC", S2Display.ACC
+	c.SetAttrib S2Display.Name & ".RT", S2Display.RT
+	c.SetAttrib S2Display.Name & ".RESP", S2Display.RESP
+	c.SetAttrib S2Display.Name & ".CRESP", S2Display.CRESP
+	
+
+	c.Log
+End Sub
+
+
+
+Sub blockproc_Run(c as Context)
+	triallist.Run c
+	
+	'''''''''''''''''''''''''''''''''''''''''''''
+	' InLine - JumpToBye BEGIN
+	'''''''''''''''''''''''''''''''''''''''''''''
+	count = count + 1
+
+If count = 2 Then 
+	GoTo ByeBye
+End If 
+	'''''''''''''''''''''''''''''''''''''''''''''
+	' InLine - JumpToBye END
+	'''''''''''''''''''''''''''''''''''''''''''''
+	
+	
+	
+	break.InputMasks.Reset
+	
+	If Keyboard.GetState() = ebStateOpen Then
+		breakEchoClients.RemoveAll
+		break.InputMasks.Add Keyboard.CreateInputMask("{SPACE}", "", CLng(break.Duration), CLng("1"), ebEndResponseActionTerminate, CLogical("Yes"), "", "", "ResponseMode:All ProcessBackspace:Yes")
+
+	
+	End If
+
+	break.Run
+	
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - ByeBye BEGIN
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+ByeBye:
+	If Err.Number = ebInputAccepted Then
+		Err.Clear
+		Resume ByeByeResume
+	ElseIf Err.Number <> 0 Then
+		'NOTE: If you receive a runtime error here, it
+		' is because a runtime error other than ebInputAccepted
+		' was thrown (ebInputAccepted for catching input masks that jump).
+		'You are encouraged to either handle the error so that
+		' it is not thrown in the future or will have to set up
+		' your own error handler, which will also need to take
+		' into account for any input masks that jump.
+		'
+		'Raise the error so the default error handler will show the message
+		Err.Raise Err.Number, Err.Source, Err.Description
+	End If
+
+ByeByeResume:
+
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	'	Label - ByeBye END
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+
+	c.Log
+End Sub
+
+Sub trialproc_Run(c as Context)
+	
+	fixation.Run
+	
+	S1Display.Filename = "exp1_images/" &_ 
+				c.GetAttrib("S1") &_ 
+				".bmp"
+	S1Display.Load
+	S1Display.Duration = CLng(c.GetAttrib("S1I"))
+	S1Display.Run
+	
+	ISI.Duration = CLng(c.GetAttrib("ISI"))
+	ISI.Run
+	
+	S2Display.Filename = "exp1_images/" &_ 
+				c.GetAttrib("S2") &_ 
+				".bmp"
+	S2Display.Load
+	
+	S2Display.InputMasks.Reset
+	
+	If Keyboard.GetState() = ebStateOpen Then
+		S2DisplayEchoClients.RemoveAll
+		S2Display.InputMasks.Add Keyboard.CreateInputMask("gln", c.GetAttrib("Correct"), CLng(S2Display.Duration), CLng("1"), ebEndResponseActionTerminate, CLogical("Yes"), "", "", "ResponseMode:All ProcessBackspace:Yes")
+
+	
+	End If
+
+	S2Display.Run
+	c.SetAttrib S2Display.Name & ".OnsetDelay", S2Display.OnsetDelay
+	c.SetAttrib S2Display.Name & ".OnsetTime", S2Display.OnsetTime
+	c.SetAttrib S2Display.Name & ".DurationError", S2Display.DurationError
+	c.SetAttrib S2Display.Name & ".RTTime", S2Display.RTTime
+	c.SetAttrib S2Display.Name & ".ACC", S2Display.ACC
+	c.SetAttrib S2Display.Name & ".RT", S2Display.RT
+	c.SetAttrib S2Display.Name & ".RESP", S2Display.RESP
+	c.SetAttrib S2Display.Name & ".CRESP", S2Display.CRESP
+	
+	
+	intertrial.Run
+	c.SetAttrib S2Display.Name & ".OnsetDelay", S2Display.OnsetDelay
+	c.SetAttrib S2Display.Name & ".OnsetTime", S2Display.OnsetTime
+	c.SetAttrib S2Display.Name & ".DurationError", S2Display.DurationError
+	c.SetAttrib S2Display.Name & ".RTTime", S2Display.RTTime
+	c.SetAttrib S2Display.Name & ".ACC", S2Display.ACC
+	c.SetAttrib S2Display.Name & ".RT", S2Display.RT
+	c.SetAttrib S2Display.Name & ".RESP", S2Display.RESP
+	c.SetAttrib S2Display.Name & ".CRESP", S2Display.CRESP
+	
+
+	c.Log
+End Sub
+
+
+
+'--------------------------------------------------------------------------
+' InitDevices
+'
+'--------------------------------------------------------------------------
+Sub InitDevices(c As Context)
+
+
+
+	SetOSThreadPriority 3
+
+
+	Set Display = New DisplayDevice
+	Display.Name = "Display"
+
+	Dim DisplayDisplayDeviceInfo As DisplayDeviceInfo
+	DisplayDisplayDeviceInfo.XRes = 800
+	DisplayDisplayDeviceInfo.YRes = 600
+	DisplayDisplayDeviceInfo.ColorDepth = 32
+	DisplayDisplayDeviceInfo.RefreshRate = 0
+	DisplayDisplayDeviceInfo.NumPages = 0
+	
+	'Load values from context if they exist
+	If c.AttribExists(Display.Name & ".XRes") Then DisplayDisplayDeviceInfo.XRes = CLng(c.GetAttrib(Display.Name & ".XRes"))
+	If c.AttribExists(Display.Name & ".YRes") Then DisplayDisplayDeviceInfo.YRes = CLng(c.GetAttrib(Display.Name & ".YRes"))
+	If c.AttribExists(Display.Name & ".ColorDepth") Then DisplayDisplayDeviceInfo.ColorDepth = CLng(c.GetAttrib(Display.Name & ".ColorDepth"))
+
+	'Open the device, unless the context values indicate otherwise
+	Dim DisplayOpen As Boolean
+	DisplayOpen = True
+	If c.AttribExists(Display.Name & ".Open") Then DisplayOpen = CLogical(c.GetAttrib(Display.Name & ".Open"))
+	If DisplayOpen = True Then
+		Display.Open DisplayDisplayDeviceInfo
+		c.SetAttrib Display.Name & ".RefreshRate", Format$(Display.CalculatedRefreshRate, "0.000")
+	End If
+
+	Set Sound = New SoundDevice
+	Sound.Name = "Sound"
+
+	Dim SoundSoundOutDeviceInfo As SoundDeviceInfo
+	SoundSoundOutDeviceInfo.Channels = 2
+	SoundSoundOutDeviceInfo.SamplesPerSecond = 22050
+	SoundSoundOutDeviceInfo.BitsPerSample = 16
+	'Load values from context if they exist
+	If c.AttribExists(Sound.Name & ".Channels") Then SoundSoundOutDeviceInfo.Channels = CLng(c.GetAttrib(Sound.Name & ".Channels"))
+	If c.AttribExists(Sound.Name & ".SamplesPerSecond") Then SoundSoundOutDeviceInfo.SamplesPerSecond = CLng(c.GetAttrib(Sound.Name & ".SamplesPerSecond"))
+	If c.AttribExists(Sound.Name & ".BitsPerSample") Then SoundSoundOutDeviceInfo.BitsPerSample = CLng(c.GetAttrib(Sound.Name & ".BitsPerSample"))
+
+	Set Keyboard = New KeyboardDevice
+	Keyboard.Name = "Keyboard"
+
+	Dim KeyboardKeyboardDeviceInfo as KeyboardDeviceInfo
+	KeyboardKeyboardDeviceInfo.CollectionMode = ebPressesOnly
+	KeyboardKeyboardDeviceInfo.CapsLock = ebCapsLockOff
+	KeyboardKeyboardDeviceInfo.NumLock = ebNumLockOn
+	'Load values from context if they exist
+	If c.AttribExists(Keyboard.Name & ".CollectionMode") Then KeyboardKeyboardDeviceInfo.CollectionMode = CLng(c.GetAttrib(Keyboard.Name & ".CollectionMode"))
+	If c.AttribExists(Keyboard.Name & ".CapsLock") Then KeyboardKeyboardDeviceInfo.CapsLock = CLng(c.GetAttrib(Keyboard.Name & ".CapsLock"))
+	If c.AttribExists(Keyboard.Name & ".NumLock") Then KeyboardKeyboardDeviceInfo.NumLock = CLng(c.GetAttrib(Keyboard.Name & ".NumLock"))
+	If c.AttribExists(Keyboard.Name & ".EmulateDeviceName") Then KeyboardKeyboardDeviceInfo.EmulateDeviceName = c.GetAttrib(Keyboard.Name & ".EmulateDeviceName")
+
+	'Open the device, unless the context values indicate otherwise
+	Dim KeyboardOpen As Boolean
+	KeyboardOpen = True
+	If c.AttribExists(Keyboard.Name & ".Open") Then KeyboardOpen = CLogical(c.GetAttrib(Keyboard.Name & ".Open"))
+	If KeyboardOpen = True Then
+		Keyboard.Open KeyboardKeyboardDeviceInfo
+	End If
+
+	Set Mouse = New MouseDevice
+	Mouse.Name = "Mouse"
+
+	Dim MouseMouseDeviceInfo as MouseDeviceInfo
+	MouseMouseDeviceInfo.OpenMode = ebMouseOpenModeDirect
+	MouseMouseDeviceInfo.CollectionMode = ebPressesOnly
+	MouseMouseDeviceInfo.ShowCursor = False
+	'Load values from context if they exist
+	If c.AttribExists(Mouse.Name & ".OpenMode") Then MouseMouseDeviceInfo.OpenMode = CLng(c.GetAttrib(Mouse.Name & ".OpenMode"))
+	If c.AttribExists(Mouse.Name & ".CollectionMode") Then MouseMouseDeviceInfo.CollectionMode = CLng(c.GetAttrib(Mouse.Name & ".CollectionMode"))
+	If c.AttribExists(Mouse.Name & ".ShowCursor") Then MouseMouseDeviceInfo.ShowCursor = CLogical(c.GetAttrib(Mouse.Name & ".ShowCursor"))
+	If c.AttribExists(Mouse.Name & ".EmulateDeviceName") Then MouseMouseDeviceInfo.EmulateDeviceName = c.GetAttrib(Mouse.Name & ".EmulateDeviceName")
+
+	'Open the device, unless the context values indicate otherwise
+	Dim MouseOpen As Boolean
+	MouseOpen = True
+	If c.AttribExists(Mouse.Name & ".Open") Then MouseOpen = CLogical(c.GetAttrib(Mouse.Name & ".Open"))
+	If MouseOpen = True Then
+		Mouse.Open MouseMouseDeviceInfo
+	End If
+
+
+	SetOSThreadPriority 0
+
+End Sub
+
+
+
+'--------------------------------------------------------------------------
+' InitObjects
+'
+'--------------------------------------------------------------------------
+Sub InitObjects(c As Context)
+
+	Set SessionProc = New Procedure
+	SessionProc.Name = "SessionProc"
+	SessionProc.Tag = ""
+	SessionProc.Subroutine = "SessionProc_Run"
+
+	Set Intructions = New TextDisplay
+	Intructions.Name = "Intructions"
+	Intructions.Tag = ""
+
+	Set IntructionsEchoClients = New EchoClientCollection
+
+	InitTextDisplayDefaults Intructions
+
+	Intructions.Text = "Bienvenid@, gracias por participar en este experimento. \n\nInicialmente se van a presentar unos ensayos de prácticas para que pueda familiarizarse co" &_ 
+				"n la tarea de detección de cambios. Durante este bloque de prácticas no se registrarán sus respuestas.\n\n A continuación se le mostrarán varias secue" &_ 
+				"ncias de dos estímulos compuestos por cuatro letras grandes (letras globales), que a su vez están compuestas por letras pequeñas (letras locales).\n\n" &_ 
+				"Por favor, preste atención a la pantalla. En cada secuencia se le mostrará primero un estímulo y luego otro que quedará en la pantalla. Su objetivo en" &_ 
+				" esta tarea consiste en detectar si se ha producido algún cambio en la segunda imagen con respecto a la primera.\n\nPulse la tecla :\n- G: si ha detec" &_ 
+				"tado un cambio en una letra global\n-  L: si ha detectado un cambio en las letras locales\n-  N: si no ha detectado ningún cambio\n\n- PULSE ESPACIO P" &_ 
+				"ARA COMENZAR -"
+	Intructions.BackColor = CColor("silver")
+	Intructions.ForeColor = CColor("blue")
+	Intructions.FontName = "Arial"
+	Intructions.FontSize = "16"
+	Intructions.FontBold = CLogical("No")
+	Intructions.Duration = CLng("-1")
+	Intructions.TimingMode = ebTimingModeEvent
+	Intructions.PreRelease = Val("0")
+
+	Intructions.OnsetSync = 1
+	Intructions.OffsetSync = 0
+
+	Set blocklistp = New List
+	blocklistp.Name = "blocklistp"
+	blocklistp.Tag = ""
+
+	'Initialization for blocklistp
+	
+	Set blocklistp.Order = New SequentialOrder
+	Set blocklistp.Deletion = NoDeletion
+	blocklistp.ResetEveryRun = False
+
+	' Create the column headings
+	blocklistp.AddAttrib "practiceexperimental"
+	blocklistp.Filename = ""
+	blocklistp.LoadMethod = ebLoadMethodEmbedded
+
+	blocklistp.Load
+
+	Set blocklistp.TerminateCondition = Cycles(1)
+	Set blocklistp.ResetCondition = Samples(1)
+	blocklistp.Reset
+	
+	Set blockprocp = New Procedure
+	blockprocp.Name = "blockprocp"
+	blockprocp.Tag = ""
+	blockprocp.Subroutine = "blockprocp_Run"
+
+	Set triallistp = New List
+	triallistp.Name = "triallistp"
+	triallistp.Tag = ""
+
+	'Initialization for triallistp
+	
+	Set triallistp.Order = New RandomOrder
+	Set triallistp.Deletion = NoDeletion
+	triallistp.ResetEveryRun = False
+
+	' Create the column headings
+	triallistp.AddAttrib "TrialId"
+	triallistp.AddAttrib "S1"
+	triallistp.AddAttrib "S2"
+	triallistp.AddAttrib "S1I"
+	triallistp.AddAttrib "ISI"
+	triallistp.AddAttrib "S2I"
+	triallistp.AddAttrib "ChangeType"
+	triallistp.AddAttrib "Correct"
+	triallistp.Filename = ""
+	triallistp.LoadMethod = ebLoadMethodEmbedded
+
+	triallistp.Load
+
+	Set triallistp.TerminateCondition = Cycles(1)
+	Set triallistp.ResetCondition = Samples(2)
+	triallistp.Reset
+	
+	Set trialprocp = New Procedure
+	trialprocp.Name = "trialprocp"
+	trialprocp.Tag = ""
+	trialprocp.Subroutine = "trialprocp_Run"
+
+	Set fixation = New TextDisplay
+	fixation.Name = "fixation"
+	fixation.Tag = ""
+
+	InitTextDisplayDefaults fixation
+
+	fixation.Text = "+"
+	fixation.FontSize = "80"
+	fixation.FontBold = CLogical("No")
+	fixation.Duration = CLng("1000")
+	fixation.TimingMode = ebTimingModeEvent
+	fixation.PreRelease = Val("0")
+
+	fixation.OnsetSync = 1
+	fixation.OffsetSync = 0
+
+	Set ISI = New TextDisplay
+	ISI.Name = "ISI"
+	ISI.Tag = ""
+
+	InitTextDisplayDefaults ISI
+
+	ISI.Text = ""
+	ISI.TimingMode = ebTimingModeEvent
+	ISI.PreRelease = Val("0")
+
+	ISI.OnsetSync = 1
+	ISI.OffsetSync = 0
+
+	Set feedback = New FeedbackDisplay
+	feedback.Name = "feedback"
+	feedback.Tag = ""
+
+	feedback.ACCDivisor = "1.0"
+	feedback.ACCFormat = "Percent"
+	feedback.RTDivisor = "1000.0"
+	feedback.RTFormat = "###0.000"
+	feedback.CorrectRTDivisor = "1000.0"
+	feedback.CorrectRTFormat = "###0.000"
+	feedback.IncorrectRTDivisor = "1000.0"
+	feedback.IncorrectRTFormat = "###0.000"
+	feedback.CollectNoRespACCStats = True
+	feedback.Duration = CLng("3000")
+	feedback.TimingMode = ebTimingModeEvent
+	feedback.PreRelease = Val("0")
+
+	feedback.OnsetSync = 1
+	feedback.OffsetSync = 0
+
+	Set feedback_State = New SlideState
+	feedback_State.Name = "Correct"
+
+	InitSlideStateDefaults feedback_State
+
+
+	feedback.States.Add feedback_State, "Correct"
+
+
+	Set feedback_SlideText = New SlideText
+	feedback_SlideText.Name = "Text4"
+
+	InitSlideTextDefaults feedback_SlideText
+
+	feedback_SlideText.X = "52%"
+	feedback_SlideText.Y = "43%"
+	feedback_SlideText.Width = "81%"
+	feedback.States.Item("Correct").Objects.Add feedback_SlideText, "Text4"
+
+	Set feedback_SlideText = New SlideText
+	feedback_SlideText.Name = "Text1"
+
+	InitSlideTextDefaults feedback_SlideText
+
+	feedback_SlideText.Text = "¡Correcto!"
+	feedback_SlideText.Y = "20%"
+	feedback_SlideText.Width = "75%"
+	feedback_SlideText.Height = "10%"
+	feedback_SlideText.ForeColor = CColor("green")
+	feedback_SlideText.BackStyle = "transparent"
+	feedback_SlideText.AlignHorizontal = "left"
+	feedback_SlideText.FontSize = "26"
+	feedback.States.Item("Correct").Objects.Add feedback_SlideText, "Text1"
+
+	Set feedback_State = New SlideState
+	feedback_State.Name = "Incorrect"
+
+	InitSlideStateDefaults feedback_State
+
+
+	feedback.States.Add feedback_State, "Incorrect"
+
+
+	Set feedback_SlideText = New SlideText
+	feedback_SlideText.Name = "Text1"
+
+	InitSlideTextDefaults feedback_SlideText
+
+	feedback_SlideText.X = "53%"
+	feedback_SlideText.Y = "43%"
+	feedback_SlideText.Width = "81%"
+	feedback.States.Item("Incorrect").Objects.Add feedback_SlideText, "Text1"
+
+	Set feedback_SlideText = New SlideText
+	feedback_SlideText.Name = "Text2"
+
+	InitSlideTextDefaults feedback_SlideText
+
+	feedback_SlideText.Text = "Incorrecto"
+	feedback_SlideText.X = "50%"
+	feedback_SlideText.Y = "20%"
+	feedback_SlideText.Width = "75%"
+	feedback_SlideText.Height = "10%"
+	feedback_SlideText.ForeColor = CColor("red")
+	feedback_SlideText.BackStyle = "transparent"
+	feedback_SlideText.AlignHorizontal = "left"
+	feedback_SlideText.FontSize = "26"
+	feedback.States.Item("Incorrect").Objects.Add feedback_SlideText, "Text2"
+
+	Set feedback_State = New SlideState
+	feedback_State.Name = "NoResponse"
+
+	InitSlideStateDefaults feedback_State
+
+
+	feedback.States.Add feedback_State, "NoResponse"
+
+
+	Set feedback_SlideText = New SlideText
+	feedback_SlideText.Name = "Text1"
+
+	InitSlideTextDefaults feedback_SlideText
+
+	feedback_SlideText.Text = "No response detected."
+	feedback_SlideText.Y = "20%"
+	feedback_SlideText.Width = "75%"
+	feedback_SlideText.Height = "10%"
+	feedback_SlideText.ForeColor = CColor("red")
+	feedback_SlideText.BackStyle = "transparent"
+	feedback_SlideText.AlignHorizontal = "left"
+	feedback.States.Item("NoResponse").Objects.Add feedback_SlideText, "Text1"
+
+	Set feedback_State = New SlideState
+	feedback_State.Name = "Pending"
+
+	InitSlideStateDefaults feedback_State
+
+
+	feedback.States.Add feedback_State, "Pending"
+
+
+	Set start = New TextDisplay
+	start.Name = "start"
+	start.Tag = ""
+
+	Set startEchoClients = New EchoClientCollection
+
+	InitTextDisplayDefaults start
+
+	start.Text = "\nHa finalizado el bloque de prácticas. \n\nA continuación se realizarán dos bloques de ensayos en los que se registrarán sus respuestas (con un desca" &_ 
+				"nso entre ellos). \n\nTenga en cuenta que se registrará el tiempo que tarda usted en contestar si ha habido un cambio global (G), un cambio local (L) " &_ 
+				"o no ha habido ningún cambio (N). \n\nPor favor, conteste lo más rápido que pueda.\n\n- PULSE ESPACIO PARA COMENZAR -"
+	start.BackColor = CColor("silver")
+	start.ForeColor = CColor("blue")
+	start.FontName = "Arial"
+	start.FontSize = "20"
+	start.FontBold = CLogical("No")
+	start.Duration = CLng("-1")
+	start.TimingMode = ebTimingModeEvent
+	start.PreRelease = Val("0")
+
+	start.OnsetSync = 1
+	start.OffsetSync = 0
+
+	Set blocklist = New List
+	blocklist.Name = "blocklist"
+	blocklist.Tag = ""
+
+	'Initialization for blocklist
+	
+	Set blocklist.Order = New SequentialOrder
+	Set blocklist.Deletion = NoDeletion
+	blocklist.ResetEveryRun = False
+
+	' Create the column headings
+	blocklist.AddAttrib "practiceexperimental"
+	blocklist.Filename = ""
+	blocklist.LoadMethod = ebLoadMethodEmbedded
+
+	blocklist.Load
+
+	Set blocklist.TerminateCondition = Cycles(2)
+	Set blocklist.ResetCondition = Samples(1)
+	blocklist.Reset
+	
+	Set blockproc = New Procedure
+	blockproc.Name = "blockproc"
+	blockproc.Tag = ""
+	blockproc.Subroutine = "blockproc_Run"
+
+	Set triallist = New List
+	triallist.Name = "triallist"
+	triallist.Tag = ""
+
+	'Initialization for triallist
+	
+	Set triallist.Order = New RandomOrder
+	Set triallist.Deletion = NoDeletion
+	triallist.ResetEveryRun = False
+
+	' Create the column headings
+	triallist.AddAttrib "TrialId"
+	triallist.AddAttrib "S1"
+	triallist.AddAttrib "S2"
+	triallist.AddAttrib "S1I"
+	triallist.AddAttrib "ISI"
+	triallist.AddAttrib "S2I"
+	triallist.AddAttrib "ChangeType"
+	triallist.AddAttrib "Correct"
+	triallist.AddAttrib "ChangePos"
+	triallist.AddAttrib "Lbefore"
+	triallist.AddAttrib "Lafter"
+	triallist.AddAttrib "Gbefore"
+	triallist.AddAttrib "Gafter"
+	triallist.Filename = ""
+	triallist.LoadMethod = ebLoadMethodEmbedded
+
+	triallist.Load
+
+	Set triallist.TerminateCondition = Cycles(1)
+	Set triallist.ResetCondition = Samples(2)
+	triallist.Reset
+	
+	Set trialproc = New Procedure
+	trialproc.Name = "trialproc"
+	trialproc.Tag = ""
+	trialproc.Subroutine = "trialproc_Run"
+
+	Set intertrial = New TextDisplay
+	intertrial.Name = "intertrial"
+	intertrial.Tag = ""
+
+	InitTextDisplayDefaults intertrial
+
+	intertrial.Text = ""
+	intertrial.FontSize = "80"
+	intertrial.FontBold = CLogical("No")
+	intertrial.Duration = CLng("800")
+	intertrial.TimingMode = ebTimingModeEvent
+	intertrial.PreRelease = Val("0")
+
+	intertrial.OnsetSync = 1
+	intertrial.OffsetSync = 0
+
+	Set break = New TextDisplay
+	break.Name = "break"
+	break.Tag = ""
+
+	Set breakEchoClients = New EchoClientCollection
+
+	InitTextDisplayDefaults break
+
+	break.Text = "\nHa finalizado el primer bloque del experimento.\n\nAHORA PUEDE DESCANSAR UNOS MINUTOS\n\n\nPulse ESPACIO cuando esté listo para continuar"
+	break.BackColor = CColor("silver")
+	break.ForeColor = CColor("blue")
+	break.FontName = "Arial"
+	break.FontSize = "22"
+	break.FontBold = CLogical("No")
+	break.Duration = CLng("-1")
+	break.TimingMode = ebTimingModeEvent
+	break.PreRelease = Val("0")
+
+	break.OnsetSync = 1
+	break.OffsetSync = 0
+
+	Set bye = New TextDisplay
+	bye.Name = "bye"
+	bye.Tag = ""
+
+	InitTextDisplayDefaults bye
+
+	bye.Text = "\nLa sesión ha finalizado.\n\nMuchas gracias por participar en este experimento. \n\nAhora puede abandonar la cabina.\n\n"
+	bye.BackColor = CColor("silver")
+	bye.ForeColor = CColor("blue")
+	bye.FontName = "Arial"
+	bye.FontSize = "24"
+	bye.FontBold = CLogical("No")
+	bye.Duration = CLng("10000")
+	bye.TimingMode = ebTimingModeEvent
+	bye.PreRelease = Val("0")
+
+	bye.OnsetSync = 1
+	bye.OffsetSync = 0
+
+	Set S1Display = New ImageDisplay
+	S1Display.Name = "S1Display"
+	S1Display.Tag = ""
+
+	InitImageDisplayDefaults S1Display
+
+	S1Display.BackColor = CColor("white")
+	S1Display.TimingMode = ebTimingModeEvent
+	S1Display.PreRelease = Val("0")
+
+	S1Display.OnsetSync = 1
+	S1Display.OffsetSync = 0
+
+	Set S2Display = New ImageDisplay
+	S2Display.Name = "S2Display"
+	S2Display.Tag = ""
+
+	Set S2DisplayEchoClients = New EchoClientCollection
+
+	InitImageDisplayDefaults S2Display
+
+	S2Display.BackColor = CColor("white")
+	S2Display.Duration = CLng("-1")
+	S2Display.TimingMode = ebTimingModeEvent
+	S2Display.PreRelease = Val("0")
+
+	S2Display.OnsetSync = 1
+	S2Display.OffsetSync = 0
+
+
+End Sub
+
+
+'--------------------------------------------------------------------------
+' InitPackages
+'
+'--------------------------------------------------------------------------
+Sub InitPackages(c As Context)
+
+End Sub
+
+
+
+'--------------------------------------------------------------------------
+' InitGlobals
+'
+'--------------------------------------------------------------------------
+Sub InitGlobals(c As Context)
+
+End Sub
+
+
+
+'--------------------------------------------------------------------------
+
+
+'--------------------------------------------------------------------------
+'--------------------------------------------------------------------------
+' UnInitGlobals
+'--------------------------------------------------------------------------
+Sub UnInitGlobals()
+End Sub
+'--------------------------------------------------------------------------
+' UnInitDevices
+'--------------------------------------------------------------------------
+Sub UnInitDevices()
+	Display.Close
+	Set Display = Nothing
+
+	Keyboard.Close
+	Set Keyboard = Nothing
+
+	Mouse.Close
+	Set Mouse = Nothing
+
+End Sub
+
+
+'--------------------------------------------------------------------------
+'--------------------------------------------------------------------------
+' UnInitPackages
+'--------------------------------------------------------------------------
+Sub UnInitPackages()
+End Sub
+
+
+'--------------------------------------------------------------------------
+' UnInitObjects
+'
+'--------------------------------------------------------------------------
+Sub UnInitObjects()
+
+	Set SessionProc = Nothing
+
+	Set Intructions = Nothing
+
+	Set IntructionsEchoClients = Nothing
+
+	Set blocklistp = Nothing
+
+	Set blockprocp = Nothing
+
+	Set triallistp = Nothing
+
+	Set trialprocp = Nothing
+
+	Set fixation = Nothing
+
+	Set ISI = Nothing
+
+	Set feedback = Nothing
+
+	Set start = Nothing
+
+	Set startEchoClients = Nothing
+
+	Set blocklist = Nothing
+
+	Set blockproc = Nothing
+
+	Set triallist = Nothing
+
+	Set trialproc = Nothing
+
+	Set intertrial = Nothing
+
+	Set break = Nothing
+
+	Set breakEchoClients = Nothing
+
+	Set bye = Nothing
+
+	Set S1Display = Nothing
+
+	Set S2Display = Nothing
+
+	Set S2DisplayEchoClients = Nothing
+
+
+End Sub
+
+
+'--------------------------------------------------------------------------
+' Main
+'
+'--------------------------------------------------------------------------
+Sub Main()
+
+	' Create and initialize the default context, data file,
+	' and provide global access to the context.
+	Dim c As Context
+	Set c = New Context
+	Set c.DataFile = New DataFile
+	c.PushNewFrame
+	Set ebContext = c
+
+	' Set the log level names
+	c.SetLogLevelName 1, "Session"
+	c.SetLogLevelName 2, "Block"
+	c.SetLogLevelName 3, "Trial"
+	c.SetLogLevelName 4, "SubTrial"
+	c.SetLogLevelName 5, "LogLevel5"
+	c.SetLogLevelName 6, "LogLevel6"
+	c.SetLogLevelName 7, "LogLevel7"
+	c.SetLogLevelName 8, "LogLevel8"
+	c.SetLogLevelName 9, "LogLevel9"
+	c.SetLogLevelName 10, "LogLevel10"
+
+	' Set standard logging items
+	ebContext.SetAttrib "Experiment", "ChangeDetection-1Row"
+	ebContext.SetAttrib "SessionDate", Date$
+	ebContext.SetAttrib "SessionTime", Time$
+
+	'Initialize global variables for packages
+	InitGlobals c
+
+	CreateDefaultPort
+
+	If Basic.OS = ebWin32 Then
+		WinActivate "E-Run Experiment Window"
+	End If
+
+	' Get the StartupInfo
+
+	' Set the defaults for all of the StartupInfo
+	If Not c.AttribExists("Subject") Then c.SetAttrib "Subject", "1"
+	If Not c.AttribExists("Session") Then c.SetAttrib "Session", "1"
+
+	' Determine if StartupInfo.UseDefaults exists and is True/False to override prompts for StartupInfo parameters
+	Dim bStartupInfoUseDefaults As Boolean
+	bStartupInfoUseDefaults = False
+	If c.AttribExists("StartupInfo.UseDefaults") Then bStartupInfoUseDefaults = CLogical(c.GetAttrib("StartupInfo.UseDefaults"))
+	If Not bStartupInfoUseDefaults Then
+
+		Dim vAnswer As Variant
+StartupInfo_Begin:
+
+StartupInfoPrompt_Subject:
+		vAnswer = AskBox("Please enter the Subject Number (1-32767, 0=No Data Logging):", c.GetAttrib("Subject"))
+		If Not IsEmpty(vAnswer) then
+			If Not IsNumeric(vAnswer) then
+				MsgBox "Please enter an integer value"
+				GoTo StartupInfoPrompt_Subject
+			ElseIf CLng(vAnswer) < 0 Then
+				MsgBox "The value for Subject must not be less than 0"
+				GoTo StartupInfoPrompt_Subject
+			ElseIf CLng(vAnswer) > 32767 Then
+				MsgBox "The value for Subject must be not be greater than 32767"
+				GoTo StartupInfoPrompt_Subject
+			End If
+		Else
+			GoTo ExperimentAbort
+		End if
+
+		c.SetAttrib "Subject", CStr(vAnswer)
+
+StartupInfoPrompt_Session:
+		vAnswer = AskBox("Please enter the Session Number (1-32767):", c.GetAttrib("Session"))
+		If Not IsEmpty(vAnswer) then
+			If Not IsNumeric(vAnswer) then
+				MsgBox "Please enter an integer value"
+				GoTo StartupInfoPrompt_Session
+			ElseIf CLng(vAnswer) < 1 Then
+				MsgBox "The value for Session must not be less than 1"
+				GoTo StartupInfoPrompt_Session
+			ElseIf CLng(vAnswer) > 32767 Then
+				MsgBox "The value for Session must be not be greater than 32767"
+				GoTo StartupInfoPrompt_Session
+			End If
+		Else
+			GoTo ExperimentAbort
+		End if
+
+		c.SetAttrib "Session", CStr(vAnswer)
+
+		' Display the summary
+		Dim strSummary As String
+		strSummary = "Subject:    " & c.GetAttrib("Subject") & "\n"
+		strSummary = strSummary & "Session:    " & c.GetAttrib("Session") & "\n"
+		strSummary = strSummary & "\nContinue with the above startup info?"
+
+		Dim nSummaryAnswer As Integer
+		nSummaryAnswer = MsgBox(strSummary, ebYesNoCancel + ebQuestion, "Summary of Startup Info")
+		If nSummaryAnswer = ebNo Then
+				GoTo StartupInfo_Begin
+		ElseIf nSummaryAnswer = ebCancel Then
+				GoTo ExperimentAbort
+		End If
+
+	End If
+
+
+	'If the attribute Clock.Scale.Override exists
+	'  then use it for to set the Clock.Scale value
+	If c.AttribExists("Clock.Scale.Override") Then
+		Clock.Scale = CDbl(c.GetAttrib("Clock.Scale.Override"))
+	End If
+
+	' Set the Filenames for the data files
+	Dim strFilenameRecovery As String
+	Dim strFilenameEDAT As String
+
+	'If the attribute DataFile.Filename.Override exists
+	'  then use it for the .txt and .edat filenames
+	If c.AttribExists("DataFile.Filename.Override") Then
+
+		' Set the default Data Filename
+		strFilenameRecovery = CStr(c.GetAttrib("DataFile.Filename.Override")) & ".txt"
+		strFilenameEDAT = CStr(c.GetAttrib("DataFile.Filename.Override")) & ".edat"
+
+	Else
+
+		' Set the default Data Filename
+		strFilenameRecovery = CStr(c.GetAttrib("Experiment")) & "-" & CStr(c.GetAttrib("Subject")) & "-" & CStr(c.GetAttrib("Session")) & ".txt"
+		strFilenameEDAT = CStr(c.GetAttrib("Experiment")) & "-" & CStr(c.GetAttrib("Subject")) & "-" & CStr(c.GetAttrib("Session")) & ".edat"
+
+	End If
+
+	'Set the name of the data file
+	c.DataFile.Filename = strFilenameRecovery
+
+	' If we are logging data, then prompt to overwrite the data file if it exists
+	If CLng(c.GetAttrib("Subject")) <> 0 Then
+		If FileExists(c.DataFile.Filename) Or FileExists(strFilenameEDAT) Then
+			If ebYes <> MsgBox("WARNING: The data file and/or recovery file already exists:\nFILE: " & c.DataFile.Filename & "\n\nDo you want to overwrite?", ebYesNo + ebQuestion) Then
+				GoTo ExperimentAbort
+			End If
+		End If
+	End If
+
+	' Set defaults for RandomSeed and GroupNumber if StartupInfo did not assign their values
+	If Not c.AttribExists("RandomSeed") Then c.SetAttrib "RandomSeed", PRNG.GetSeed()
+	If Not c.AttribExists("Group") Then c.SetAttrib "Group", "1"
+
+	'Set the random seed
+	Randomize CLng(c.GetAttrib("RandomSeed"))
+
+	' Initialize all system devices, packages, and objects
+	InitDevices c
+	InitPackages c
+	InitObjects c
+
+	' If we are logging data, then open the datafile
+	If CLng(c.GetAttrib("Subject")) <> 0 Then
+		c.DataFile.Open
+		c.LogHeader
+	End If
+
+
+
+#If RUNTIME_VERSION_MAJOR > 1  Or (RUNTIME_VERSION_MAJOR = 1 And RUNTIME_VERSION_MINOR >= 2) Then
+	' Log clock timing information
+	c.SetAttrib "Clock.Information", Clock.Information
+#End If
+
+	' Start the running of the Experiment
+	SessionProc.Run c
+
+	' Clean up the context and close the datafile
+	If CLng(c.GetAttrib("Subject")) <> 0 Then
+		c.DataFile.Close
+		' Attempt to convert the recovery file into a data file
+		Dim nConvert As Long
+		nConvert = c.DataFile.Convert(ebProgressSimple)
+		If nConvert = 0 Then
+			' Settings in E-Studio are set to not remove E-Recovery file
+		Else
+			' The datafile failed to convert!
+			MsgBox "ERROR: The datafile did not convert!\nFILE: " & c.DataFile.Filename & "\n\nIt is recommended that you recover your data with the E-Recovery utility"
+			MsgBox c.DataFile.GetLastErrorMessage()
+		End If
+	End If
+ExperimentFinish:
+
+	UnInitObjects
+
+	UnInitPackages
+	UnInitDevices
+
+	UnInitGlobals
+
+ExperimentAbort:
+
+	' Clean up the context
+	c.PopFrame
+	Set c = Nothing
+	Set ebContext = Nothing
+
+	DestroyDefaultPort
+
+End Sub
+
+
+[DataSection_blocklistp(1)]
+Weight	Nested	Procedure	practiceexperimental
+1		blockprocp	practice\0
+
+[DataSection_triallistp(1)]
+Weight	Nested	Procedure	TrialId	S1	S2	S1I	ISI	S2I	ChangeType	Correct
+1		trialprocp	9199	1Row-Ae-Bg-Ae-Od	1Row-Ae-Bg-Ae-Hd	500	250	500	G	g
+1		trialprocp	9505	1Row-Hx-Of-Od-Ae	1Row-Hx-Of-Od-Ae	500	250	500	N	n
+1		trialprocp	9604	1Row-Ae-Xd-Rf-Hf	1Row-Ae-Xd-Rf-Hf	500	250	500	N	n
+1		trialprocp	9354	1Row-Hc-Oa-Xf-Ah	1Row-Hc-Ra-Xf-Ah	500	250	500	G	g
+1		trialprocp	9307	1Row-Xf-Xf-Xf-Xg	1Row-Xf-Xf-Xf-Xg	500	250	500	N	n
+1		trialprocp	9406	1Row-Hc-Oa-Xf-Ah	1Row-Hc-Oa-Xf-Ah	500	250	500	N	n
+1		trialprocp	9289	1Row-Xf-Xf-Xf-Xg	1Row-Xf-Xg-Xf-Xg	500	250	500	L	l
+1		trialprocp	9252	1Row-Xf-Xf-Xf-Xg	1Row-Xf-Xf-Xf-Xf	500	250	500	L	l
+1		trialprocp	9438	1Row-Hx-Of-Od-Ae	1Row-Hx-Zf-Od-Ae	500	250	500	G	g
+1		trialprocp	9283	1Row-Xf-Xf-Xf-Xg	1Row-Xf-Xf-Xf-Xl	500	250	500	L	l
+1		trialprocp	9522	1Row-Ae-Xd-Rf-Hf	1Row-Ae-Xd-Rx-Hf	500	250	500	L	l
+1		trialprocp	9467	1Row-Hx-Of-Od-Ae	1Row-Hx-Of-Xd-Ae	500	250	500	G	g\0
+
+[DataSection_blocklist(1)]
+Weight	Nested	Procedure	practiceexperimental
+1		blockproc	experimental\0
+
+[DataSection_triallist(1)]
+Weight	Nested	Procedure	TrialId	S1	S2	S1I	ISI	S2I	ChangeType	Correct	ChangePos	Lbefore	Lafter	Gbefore	Gafter
+1		trialproc	6222	1Row-Gh-Bg-Zx-Hd	1Row-Gh-Zg-Zx-Hd	500	250	500	G	g	2	*	*	B	Z
+1		trialproc	516	1Row-Dx-Bg-Ef-Hd	1Row-Dg-Bg-Ef-Hd	500	250	500	L	l	1	X	G	*	*
+1		trialproc	892	1Row-Og-Bh-Xg-Bf	1Row-Og-Bh-Xg-Bf	500	250	500	N	n	0	*	*	*	*
+1		trialproc	4413	1Row-Xd-Xf-Xd-Xg	1Row-Xd-Xg-Xd-Xg	500	250	500	L	l	2	F	G	*	*
+1		trialproc	3773	1Row-Hc-Bh-Xg-Ah	1Row-Ha-Bh-Xg-Ah	500	250	500	L	l	1	C	A	*	*
+1		trialproc	242	1Row-Xd-Xg-Xd-Xg	1Row-Xd-Xf-Xd-Xg	500	250	500	L	l	2	G	F	*	*
+1		trialproc	7723	1Row-Rg-Bh-Xg-Bf	1Row-Rg-Bh-Xg-Bf	500	250	500	N	n	0	*	*	*	*
+1		trialproc	2014	1Row-Xg-Zx-Xg-Hd	1Row-Xg-Ox-Xg-Hd	500	250	500	G	g	2	*	*	Z	O
+1		trialproc	5056	1Row-Xg-Xd-Xd-Xg	1Row-Xg-Xd-Xg-Xg	500	250	500	L	l	3	D	G	*	*
+1		trialproc	1486	1Row-Ae-Xd-Rx-Hf	1Row-Ae-Xd-Rx-Hf	500	250	500	N	n	0	*	*	*	*
+1		trialproc	5709	1Row-Hx-Of-Xd-Ae	1Row-Hx-Rf-Xd-Ae	500	250	500	G	g	2	*	*	O	R
+1		trialproc	2022	1Row-Xg-Zx-Xg-Hd	1Row-Xg-Bx-Xg-Hd	500	250	500	G	g	2	*	*	Z	B
+1		trialproc	100	1Row-De-Bg-Zf-Hd	1Row-De-Bg-Zf-Hd	500	250	500	N	n	0	*	*	*	*
+1		trialproc	6337	1Row-Hf-Rf-Xd-Ae	1Row-Hf-Rf-Xd-Ae	500	250	500	N	n	0	*	*	*	*
+1		trialproc	2415	1Row-Hx-Rf-Xd-Ae	1Row-Ha-Rf-Xd-Ae	500	250	500	L	l	1	X	A	*	*
+1		trialproc	4258	1Row-Hc-Ra-Xf-Ah	1Row-Hc-Ra-Xf-Ah	500	250	500	N	n	0	*	*	*	*
+1		trialproc	1004	1Row-Gl-Bg-Ah-Hd	1Row-Gh-Bg-Ah-Hd	500	250	500	L	l	1	L	H	*	*
+1		trialproc	1253	1Row-Xf-Xg-Xd-Xg	1Row-Xf-Xg-Xf-Xg	500	250	500	L	l	3	D	F	*	*
+1		trialproc	2971	1Row-Xg-Bh-Xg-Bf	1Row-Xg-Bh-Xg-Bf	500	250	500	N	n	0	*	*	*	*
+1		trialproc	38	1Row-Xf-Xd-Xd-Xf	1Row-Xf-Xd-Xd-Xg	500	250	500	L	l	4	F	G	*	*
+1		trialproc	5149	1Row-Dh-Bg-Ef-Hd	1Row-Dh-Bg-Ef-Hd	500	250	500	N	n	0	*	*	*	*
+1		trialproc	1882	1Row-Ae-Zf-Rx-Hd	1Row-Ae-Zf-Rx-Hd	500	250	500	N	n	0	*	*	*	*
+1		trialproc	1179	1Row-Xf-Xg-Xd-Xg	1Row-Xd-Xg-Xd-Xg	500	250	500	L	l	1	F	D	*	*
+1		trialproc	2265	1Row-Gh-Bg-Ah-Hd	1Row-Gl-Bg-Ah-Hd	500	250	500	L	l	1	H	L	*	*
+1		trialproc	134	1Row-De-Bg-Zf-Hd	1Row-De-Bg-Ef-Hd	500	250	500	G	g	3	*	*	Z	E
+1		trialproc	5122	1Row-Dh-Bg-Ef-Hd	1Row-Dg-Bg-Ef-Hd	500	250	500	L	l	1	H	G	*	*
+1		trialproc	3251	1Row-Gh-Bg-Ef-Hd	1Row-Gh-Bg-Eh-Hd	500	250	500	L	l	3	F	H	*	*
+1		trialproc	4065	1Row-Xd-Xf-Xl-Xc	1Row-Xf-Xf-Xl-Xc	500	250	500	L	l	1	D	F	*	*
+1		trialproc	3268	1Row-Gh-Bg-Ef-Hd	1Row-Gh-Bg-Ef-Hd	500	250	500	N	n	0	*	*	*	*
+1		trialproc	2486	1Row-Dg-Bg-Ef-Hd	1Row-De-Bg-Ef-Hd	500	250	500	L	l	1	G	E	*	*
+1		trialproc	1163	1Row-Ae-Zg-Ae-Hd	1Row-Ae-Bg-Ae-Hd	500	250	500	G	g	2	*	*	Z	B
+1		trialproc	6535	1Row-Ae-Xd-Rx-Hx	1Row-Ae-Xd-Rx-Hx	500	250	500	N	n	0	*	*	*	*
+1		trialproc	913	1Row-Og-Bh-Xg-Bf	1Row-Xg-Bh-Xg-Bf	500	250	500	G	g	1	*	*	O	X
+1		trialproc	2575	1Row-Zx-Bg-Ef-Hd	1Row-Zx-Bg-Ef-Hd	500	250	500	N	n	0	*	*	*	*
+1		trialproc	6032	1Row-Xg-Bx-Xg-Hd	1Row-Xg-Ox-Xg-Hd	500	250	500	G	g	2	*	*	B	O
+1		trialproc	6257	1Row-Gh-Bg-Zx-Hd	1Row-Gh-Bg-Ex-Hd	500	250	500	G	g	3	*	*	Z	E
+1		trialproc	2179	1Row-Zx-Rd-Xf-Ah	1Row-Zx-Rd-Xf-Ah	500	250	500	N	n	0	*	*	*	*
+1		trialproc	6822	1Row-Ae-Bg-Rx-Hd	1Row-Ae-Bg-Zx-Hd	500	250	500	G	g	3	*	*	R	Z
+1		trialproc	1441	1Row-Hc-Rd-Xf-Ah	1Row-Hx-Rd-Xf-Ah	500	250	500	L	l	1	C	X	*	*
+1		trialproc	5215	1Row-Xg-Ox-Xg-Hd	1Row-Xg-Zx-Xg-Hd	500	250	500	G	g	2	*	*	O	Z
+1		trialproc	810	1Row-Zg-Bg-Ef-Hd	1Row-Dg-Bg-Ef-Hd	500	250	500	G	g	1	*	*	Z	D
+1		trialproc	651	1Row-Oa-Rf-Xd-Ae	1Row-Ha-Rf-Xd-Ae	500	250	500	G	g	1	*	*	O	H
+1		trialproc	7675	1Row-Rg-Bh-Xg-Bf	1Row-Xg-Bh-Xg-Bf	500	250	500	G	g	1	*	*	R	X
+1		trialproc	1585	1Row-Gh-Bg-Eh-Hd	1Row-Gh-Bg-Eh-Hd	500	250	500	N	n	0	*	*	*	*
+1		trialproc	3763	1Row-Hc-Bh-Xg-Ah	1Row-Hc-Bh-Xg-Ah	500	250	500	N	n	0	*	*	*	*
+1		trialproc	3436	1Row-De-Bg-Ef-Hd	1Row-Dx-Bg-Ef-Hd	500	250	500	L	l	1	E	X	*	*
+1		trialproc	7076	1Row-Ae-Of-Rx-Hd	1Row-Ae-Zf-Rx-Hd	500	250	500	G	g	2	*	*	O	Z
+1		trialproc	6040	1Row-Xg-Bx-Xg-Hd	1Row-Xg-Bx-Xg-Hd	500	250	500	N	n	0	*	*	*	*
+1		trialproc	2134	1Row-Xd-Xg-Xg-Xg	1Row-Xd-Xd-Xg-Xg	500	250	500	L	l	2	G	D	*	*
+1		trialproc	2080	1Row-Xd-Xg-Xg-Xg	1Row-Xd-Xg-Xg-Xg	500	250	500	N	n	0	*	*	*	*
+1		trialproc	1592	1Row-Gh-Bg-Eh-Hd	1Row-Gh-Bg-Ah-Hd	500	250	500	G	g	3	*	*	E	A
+1		trialproc	1624	1Row-Gh-Bg-Eh-Hd	1Row-Gh-Og-Eh-Hd	500	250	500	G	g	2	*	*	B	O
+1		trialproc	4159	1Row-Xg-Bh-Xg-Zf	1Row-Xg-Bh-Xg-Zf	500	250	500	N	n	0	*	*	*	*
+1		trialproc	6832	1Row-Ae-Bg-Rx-Hd	1Row-Ae-Bg-Rx-Hd	500	250	500	N	n	0	*	*	*	*
+1		trialproc	956	1Row-Og-Bh-Xg-Bf	1Row-Og-Bh-Xg-Of	500	250	500	G	g	4	*	*	B	O
+1		trialproc	3862	1Row-Xf-Xf-Xf-Xf	1Row-Xf-Xf-Xf-Xf	500	250	500	N	n	0	*	*	*	*
+1		trialproc	4496	1Row-Xd-Xf-Xd-Xg	1Row-Xd-Xf-Xl-Xg	500	250	500	L	l	3	D	L	*	*
+1		trialproc	845	1Row-Zg-Bg-Ef-Hd	1Row-Zf-Bg-Ef-Hd	500	250	500	L	l	1	G	F	*	*
+1		trialproc	3639	1Row-Xf-Xd-Xd-Xg	1Row-Xf-Xg-Xd-Xg	500	250	500	L	l	2	D	G	*	*
+1		trialproc	7525	1Row-Xf-Xg-Xf-Xg	1Row-Xf-Xg-Xf-Xg	500	250	500	N	n	0	*	*	*	*
+1		trialproc	2991	1Row-Xg-Bh-Xg-Bf	1Row-Xg-Bh-Og-Bf	500	250	500	G	g	3	*	*	X	O
+1		trialproc	2090	1Row-Xd-Xg-Xg-Xg	1Row-Xg-Xg-Xg-Xg	500	250	500	L	l	1	D	G	*	*
+1		trialproc	2817	1Row-Ae-Bf-Rx-Hd	1Row-Ae-Of-Rx-Hd	500	250	500	G	g	2	*	*	B	O
+1		trialproc	5110	1Row-Dh-Bg-Ef-Hd	1Row-Dh-Zg-Ef-Hd	500	250	500	G	g	2	*	*	B	Z
+1		trialproc	4576	1Row-Xf-Xf-Xl-Xc	1Row-Xf-Xf-Xl-Xl	500	250	500	L	l	4	C	L	*	*
+1		trialproc	4865	1Row-Hl-Rf-Xd-Ae	1Row-Ha-Rf-Xd-Ae	500	250	500	L	l	1	L	A	*	*
+1		trialproc	4310	1Row-Hc-Ra-Xf-Ah	1Row-Hc-Oa-Xf-Ah	500	250	500	G	g	2	*	*	R	O
+1		trialproc	1651	1Row-Gh-Bg-Eh-Hd	1Row-Gh-Bg-Ex-Hd	500	250	500	L	l	3	H	X	*	*
+1		trialproc	1891	1Row-Ae-Zf-Rx-Hd	1Row-Ae-Bf-Rx-Hd	500	250	500	G	g	2	*	*	Z	B
+1		trialproc	6733	1Row-Hx-Rd-Xf-Ah	1Row-Hx-Rd-Xf-Ah	500	250	500	N	n	0	*	*	*	*
+1		trialproc	7228	1Row-Og-Bh-Xg-Of	1Row-Og-Bh-Xg-Of	500	250	500	N	n	0	*	*	*	*
+1		trialproc	1837	1Row-Ae-Of-Rx-Od	1Row-Ae-Of-Rx-Hd	500	250	500	G	g	4	*	*	O	H
+1		trialproc	2557	1Row-Zx-Bg-Ef-Hd	1Row-Zg-Bg-Ef-Hd	500	250	500	L	l	1	X	G	*	*
+1		trialproc	369	1Row-Hx-Od-Xf-Ah	1Row-Zx-Od-Xf-Ah	500	250	500	G	g	1	*	*	H	Z
+1		trialproc	6931	1Row-Xf-Xf-Xf-Xl	1Row-Xf-Xf-Xf-Xl	500	250	500	N	n	0	*	*	*	*
+1		trialproc	5102	1Row-Dh-Bg-Ef-Hd	1Row-Dx-Bg-Ef-Hd	500	250	500	L	l	1	H	X	*	*
+1		trialproc	6109	1Row-Ha-Rf-Xd-Ae	1Row-Ha-Zf-Xd-Ae	500	250	500	G	g	2	*	*	R	Z
+1		trialproc	199	1Row-Xd-Xg-Xd-Xg	1Row-Xd-Xg-Xd-Xg	500	250	500	N	n	0	*	*	*	*
+1		trialproc	5229	1Row-Xg-Ox-Xg-Hd	1Row-Xg-Ox-Zg-Hd	500	250	500	G	g	3	*	*	X	Z
+1		trialproc	7327	1Row-Zx-Od-Xf-Ah	1Row-Zx-Od-Xf-Ah	500	250	500	N	n	0	*	*	*	*
+1		trialproc	3060	1Row-Xg-Xg-Xg-Xg	1Row-Xd-Xg-Xg-Xg	500	250	500	L	l	1	G	D	*	*
+1		trialproc	4415	1Row-Xd-Xf-Xd-Xg	1Row-Xd-Xf-Xa-Xg	500	250	500	L	l	3	D	A	*	*
+1		trialproc	7030	1Row-Xd-Xd-Xd-Xd	1Row-Xd-Xd-Xd-Xd	500	250	500	N	n	0	*	*	*	*
+1		trialproc	2061	1Row-Xd-Xg-Xg-Xg	1Row-Xd-Xg-Xd-Xg	500	250	500	L	l	3	G	D	*	*
+1		trialproc	3483	1Row-De-Bg-Ef-Hd	1Row-Dh-Bg-Ef-Hd	500	250	500	L	l	1	E	H	*	*
+1		trialproc	4797	1Row-Ha-Bh-Xg-Ah	1Row-Ha-Bh-Zg-Ah	500	250	500	G	g	3	*	*	X	Z
+1		trialproc	7822	1Row-Ae-Bg-Ah-Hd	1Row-Ae-Bg-Ah-Hd	500	250	500	N	n	0	*	*	*	*
+1		trialproc	5256	1Row-Xg-Ox-Xg-Hd	1Row-Xg-Bx-Xg-Hd	500	250	500	G	g	2	*	*	O	B
+1		trialproc	5036	1Row-Xg-Xd-Xd-Xg	1Row-Xf-Xd-Xd-Xg	500	250	500	L	l	1	G	F	*	*
+1		trialproc	741	1Row-Ae-Xd-Zx-Hd	1Row-Ae-Xd-Rx-Hd	500	250	500	G	g	3	*	*	Z	R
+1		trialproc	5132	1Row-Dh-Bg-Ef-Hd	1Row-De-Bg-Ef-Hd	500	250	500	L	l	1	H	E	*	*
+1		trialproc	5087	1Row-Xg-Xd-Xd-Xg	1Row-Xd-Xd-Xd-Xg	500	250	500	L	l	1	G	D	*	*
+1		trialproc	7085	1Row-Ae-Of-Rx-Hd	1Row-Ae-Bf-Rx-Hd	500	250	500	G	g	2	*	*	O	B
+1		trialproc	5842	1Row-Ae-Bg-Zx-Hd	1Row-Ae-Bg-Zx-Hd	500	250	500	N	n	0	*	*	*	*
+1		trialproc	527	1Row-Dx-Bg-Ef-Hd	1Row-Dx-Zg-Ef-Hd	500	250	500	G	g	2	*	*	B	Z
+1		trialproc	3565	1Row-Dx-Zg-Ef-Hd	1Row-Dx-Zg-Ef-Hd	500	250	500	N	n	0	*	*	*	*
+1		trialproc	2278	1Row-Gh-Bg-Ah-Hd	1Row-Gh-Bg-Ah-Hd	500	250	500	N	n	0	*	*	*	*
+1		trialproc	7164	1Row-Og-Bh-Xg-Of	1Row-Og-Bh-Xg-Bf	500	250	500	G	g	4	*	*	O	B
+1		trialproc	3199	1Row-Ha-Zf-Xd-Ae	1Row-Ha-Rf-Xd-Ae	500	250	500	G	g	2	*	*	Z	R
+1		trialproc	4852	1Row-Hl-Rf-Xd-Ae	1Row-Hl-Rf-Xd-Ae	500	250	500	N	n	0	*	*	*	*
+1		trialproc	2554	1Row-Zx-Bg-Ef-Hd	1Row-Dx-Bg-Ef-Hd	500	250	500	G	g	1	*	*	Z	D
+1		trialproc	3019	1Row-Xg-Bh-Xg-Bf	1Row-Rg-Bh-Xg-Bf	500	250	500	G	g	1	*	*	X	R
+1		trialproc	2814	1Row-Ae-Bf-Rx-Hd	1Row-Ae-Bg-Rx-Hd	500	250	500	L	l	2	F	G	*	*
+1		trialproc	2764	1Row-Ae-Bf-Rx-Hd	1Row-Ae-Zf-Rx-Hd	500	250	500	G	g	2	*	*	B	Z
+1		trialproc	595	1Row-Oa-Rf-Xd-Ae	1Row-Oa-Rf-Xd-Ae	500	250	500	N	n	0	*	*	*	*
+1		trialproc	3917	1Row-Xf-Xf-Xf-Xf	1Row-Xf-Xf-Xf-Xg	500	250	500	L	l	4	F	G	*	*
+1		trialproc	4743	1Row-Ha-Bh-Xg-Ah	1Row-Hc-Bh-Xg-Ah	500	250	500	L	l	1	A	C	*	*
+1		trialproc	6409	1Row-Hc-Bh-Zg-Ah	1Row-Hc-Bh-Xg-Ah	500	250	500	G	g	3	*	*	Z	X
+1		trialproc	1705	1Row-Hc-Bh-Xf-Ah	1Row-Hc-Bh-Xg-Ah	500	250	500	L	l	3	F	G	*	*
+1		trialproc	3386	1Row-Xg-Ox-Zg-Hd	1Row-Xg-Ox-Xg-Hd	500	250	500	G	g	3	*	*	Z	X
+1		trialproc	4827	1Row-Hl-Rf-Xd-Ae	1Row-Hx-Rf-Xd-Ae	500	250	500	L	l	1	L	X	*	*
+1		trialproc	4104	1Row-Xd-Xf-Xl-Xc	1Row-Xd-Xf-Xl-Xg	500	250	500	L	l	4	C	G	*	*
+1		trialproc	694	1Row-Ae-Xd-Zx-Hd	1Row-Ae-Xd-Zx-Hd	500	250	500	N	n	0	*	*	*	*
+1		trialproc	4060	1Row-Xd-Xf-Xl-Xc	1Row-Xd-Xf-Xl-Xc	500	250	500	N	n	0	*	*	*	*
+1		trialproc	6083	1Row-Ha-Rf-Xd-Ae	1Row-Oa-Rf-Xd-Ae	500	250	500	G	g	1	*	*	H	O
+1		trialproc	6436	1Row-Hc-Bh-Zg-Ah	1Row-Hc-Bh-Zg-Ah	500	250	500	N	n	0	*	*	*	*
+1		trialproc	2609	1Row-Zx-Bg-Ef-Hd	1Row-Zf-Bg-Ef-Hd	500	250	500	L	l	1	X	F	*	*
+1		trialproc	1090	1Row-Ae-Zg-Ae-Hd	1Row-Ae-Zg-Ae-Hd	500	250	500	N	n	0	*	*	*	*
+1		trialproc	2402	1Row-Hx-Rf-Xd-Ae	1Row-Hl-Rf-Xd-Ae	500	250	500	L	l	1	X	L	*	*
+1		trialproc	2271	1Row-Gh-Bg-Ah-Hd	1Row-Gh-Bg-Eh-Hd	500	250	500	G	g	3	*	*	A	E
+1		trialproc	1214	1Row-Xf-Xg-Xd-Xg	1Row-Xf-Xd-Xd-Xg	500	250	500	L	l	2	G	D	*	*
+1		trialproc	3169	1Row-Ha-Zf-Xd-Ae	1Row-Ha-Zf-Xd-Ae	500	250	500	N	n	0	*	*	*	*
+1		trialproc	2503	1Row-Dg-Bg-Ef-Hd	1Row-Dh-Bg-Ef-Hd	500	250	500	L	l	1	G	H	*	*
+1		trialproc	7129	1Row-Ae-Of-Rx-Hd	1Row-Ae-Of-Rx-Hd	500	250	500	N	n	0	*	*	*	*
+1		trialproc	2456	1Row-Dg-Bg-Ef-Hd	1Row-Dx-Bg-Ef-Hd	500	250	500	L	l	1	G	X	*	*
+1		trialproc	5743	1Row-Hx-Of-Xd-Ae	1Row-Hx-Of-Xd-Ae	500	250	500	N	n	0	*	*	*	*
+1		trialproc	2939	1Row-Hx-Zf-Od-Ae	1Row-Hx-Of-Od-Ae	500	250	500	G	g	2	*	*	Z	O
+1		trialproc	6238	1Row-Gh-Bg-Zx-Hd	1Row-Gh-Bg-Zx-Hd	500	250	500	N	n	0	*	*	*	*
+1		trialproc	4550	1Row-Xf-Xf-Xl-Xc	1Row-Xd-Xf-Xl-Xc	500	250	500	L	l	1	F	D	*	*
+1		trialproc	4147	1Row-Xg-Bh-Xg-Zf	1Row-Xg-Bh-Xg-Bf	500	250	500	G	g	4	*	*	Z	B
+1		trialproc	298	1Row-Hx-Od-Xf-Ah	1Row-Hx-Od-Xf-Ah	500	250	500	N	n	0	*	*	*	*
+1		trialproc	5407	1Row-Gh-Og-Eh-Hd	1Row-Gh-Bg-Eh-Hd	500	250	500	G	g	2	*	*	O	B
+1		trialproc	3790	1Row-Hc-Bh-Xg-Ah	1Row-Hc-Bh-Zg-Ah	500	250	500	G	g	3	*	*	X	Z
+1		trialproc	4499	1Row-Xd-Xf-Xd-Xg	1Row-Xd-Xd-Xd-Xg	500	250	500	L	l	2	F	D	*	*
+1		trialproc	5852	1Row-Ae-Bg-Zx-Hd	1Row-Ae-Bg-Rx-Hd	500	250	500	G	g	3	*	*	Z	R
+1		trialproc	7075	1Row-Ae-Of-Rx-Hd	1Row-Ae-Of-Rx-Od	500	250	500	G	g	4	*	*	H	O
+1		trialproc	961	1Row-Og-Bh-Xg-Bf	1Row-Rg-Bh-Xg-Bf	500	250	500	G	g	1	*	*	O	R
+1		trialproc	3534	1Row-Dx-Zg-Ef-Hd	1Row-Dx-Bg-Ef-Hd	500	250	500	G	g	2	*	*	Z	B
+1		trialproc	3715	1Row-Xf-Xd-Xd-Xg	1Row-Xd-Xd-Xd-Xg	500	250	500	L	l	1	F	D	*	*
+1		trialproc	3961	1Row-Zg-Bh-Xg-Of	1Row-Zg-Bh-Xg-Of	500	250	500	N	n	0	*	*	*	*
+1		trialproc	1	1Row-Xf-Xd-Xd-Xf	1Row-Xf-Xd-Xd-Xf	500	250	500	N	n	0	*	*	*	*
+1		trialproc	1783	1Row-Ae-Of-Rx-Od	1Row-Ae-Of-Rx-Od	500	250	500	N	n	0	*	*	*	*
+1		trialproc	2983	1Row-Xg-Bh-Xg-Bf	1Row-Xg-Bh-Xg-Zf	500	250	500	G	g	4	*	*	B	Z
+1		trialproc	6139	1Row-Ha-Rf-Xd-Ae	1Row-Ha-Rf-Xd-Ae	500	250	500	N	n	0	*	*	*	*
+1		trialproc	1288	1Row-Dh-Zg-Ef-Hd	1Row-Dh-Zg-Ef-Hd	500	250	500	N	n	0	*	*	*	*
+1		trialproc	4555	1Row-Xf-Xf-Xl-Xc	1Row-Xf-Xf-Xl-Xc	500	250	500	N	n	0	*	*	*	*
+1		trialproc	3287	1Row-Gh-Bg-Ef-Hd	1Row-Dh-Bg-Ef-Hd	500	250	500	G	g	1	*	*	G	D
+1		trialproc	3627	1Row-Xf-Xd-Xd-Xg	1Row-Xf-Xd-Xd-Xf	500	250	500	L	l	4	G	F	*	*
+1		trialproc	1602	1Row-Gh-Bg-Eh-Hd	1Row-Gh-Bg-Ef-Hd	500	250	500	L	l	3	H	F	*	*
+1		trialproc	285	1Row-Xd-Xg-Xd-Xg	1Row-Xd-Xd-Xd-Xg	500	250	500	L	l	2	G	D	*	*
+1		trialproc	2674	1Row-Xg-Bh-Xg-Hd	1Row-Xg-Bh-Xg-Hd	500	250	500	N	n	0	*	*	*	*
+1		trialproc	5130	1Row-Dh-Bg-Ef-Hd	1Row-Gh-Bg-Ef-Hd	500	250	500	G	g	1	*	*	D	G
+1		trialproc	5970	1Row-Zf-Bg-Ef-Hd	1Row-Ef-Bg-Ef-Hd	500	250	500	G	g	1	*	*	Z	E
+1		trialproc	2459	1Row-Dg-Bg-Ef-Hd	1Row-Zg-Bg-Ef-Hd	500	250	500	G	g	1	*	*	D	Z
+1		trialproc	4753	1Row-Ha-Bh-Xg-Ah	1Row-Ha-Bh-Xg-Ah	500	250	500	N	n	0	*	*	*	*
+1		trialproc	6687	1Row-Hx-Rd-Xf-Ah	1Row-Zx-Rd-Xf-Ah	500	250	500	G	g	1	*	*	H	Z
+1		trialproc	7195	1Row-Og-Bh-Xg-Of	1Row-Zg-Bh-Xg-Of	500	250	500	G	g	1	*	*	O	Z
+1		trialproc	526	1Row-Dx-Bg-Ef-Hd	1Row-De-Bg-Ef-Hd	500	250	500	L	l	1	X	E	*	*
+1		trialproc	5248	1Row-Xg-Ox-Xg-Hd	1Row-Xg-Ox-Xg-Hd	500	250	500	N	n	0	*	*	*	*
+1		trialproc	4670	1Row-Gh-Zg-Zx-Hd	1Row-Gh-Bg-Zx-Hd	500	250	500	G	g	2	*	*	Z	B
+1		trialproc	478	1Row-Xd-Xf-Xa-Xg	1Row-Xd-Xf-Xl-Xg	500	250	500	L	l	3	A	L	*	*
+1		trialproc	543	1Row-Dx-Bg-Ef-Hd	1Row-Dh-Bg-Ef-Hd	500	250	500	L	l	1	X	H	*	*
+1		trialproc	438	1Row-Xd-Xf-Xa-Xg	1Row-Xd-Xf-Xd-Xg	500	250	500	L	l	3	A	D	*	*
+1		trialproc	517	1Row-Dx-Bg-Ef-Hd	1Row-Zx-Bg-Ef-Hd	500	250	500	G	g	1	*	*	D	Z
+1		trialproc	3070	1Row-Xg-Xg-Xg-Xg	1Row-Xg-Xg-Xg-Xg	500	250	500	N	n	0	*	*	*	*
+1		trialproc	2430	1Row-Hx-Rf-Xd-Ae	1Row-Hx-Rf-Xd-Ah	500	250	500	L	l	4	E	H	*	*
+1		trialproc	218	1Row-Xd-Xg-Xd-Xg	1Row-Xd-Xg-Xg-Xg	500	250	500	L	l	3	D	G	*	*
+1		trialproc	7256	1Row-Zx-Od-Xf-Ah	1Row-Hx-Od-Xf-Ah	500	250	500	G	g	1	*	*	Z	H
+1		trialproc	2231	1Row-Zx-Rd-Xf-Ah	1Row-Zx-Od-Xf-Ah	500	250	500	G	g	2	*	*	R	O
+1		trialproc	5618	1Row-Xg-Xd-Xg-Xg	1Row-Xg-Xg-Xg-Xg	500	250	500	L	l	2	D	G	*	*
+1		trialproc	3367	1Row-Xg-Ox-Zg-Hd	1Row-Xg-Ox-Zg-Hd	500	250	500	N	n	0	*	*	*	*
+1		trialproc	3542	1Row-Dx-Zg-Ef-Hd	1Row-Dh-Zg-Ef-Hd	500	250	500	L	l	1	X	H	*	*
+1		trialproc	1684	1Row-Hc-Bh-Xf-Ah	1Row-Hc-Bh-Xf-Ah	500	250	500	N	n	0	*	*	*	*
+1		trialproc	1064	1Row-Gl-Bg-Ah-Hd	1Row-Al-Bg-Ah-Hd	500	250	500	G	g	1	*	*	G	A
+1		trialproc	1189	1Row-Xf-Xg-Xd-Xg	1Row-Xf-Xg-Xd-Xg	500	250	500	N	n	0	*	*	*	*
+1		trialproc	2225	1Row-Zx-Rd-Xf-Ah	1Row-Hx-Rd-Xf-Ah	500	250	500	G	g	1	*	*	Z	H
+1		trialproc	1981	1Row-Xg-Zx-Xg-Hd	1Row-Xg-Zx-Xg-Hd	500	250	500	N	n	0	*	*	*	*
+1		trialproc	2417	1Row-Hx-Rf-Xd-Ae	1Row-Hf-Rf-Xd-Ae	500	250	500	L	l	1	X	F	*	*
+1		trialproc	3742	1Row-Hc-Bh-Xg-Ah	1Row-Hc-Bh-Xf-Ah	500	250	500	L	l	3	G	F	*	*
+1		trialproc	1568	1Row-Ae-Xd-Rx-Hf	1Row-Ae-Xd-Rf-Hf	500	250	500	L	l	3	X	F	*	*
+1		trialproc	5050	1Row-Xg-Xd-Xd-Xg	1Row-Xg-Xd-Xd-Xg	500	250	500	N	n	0	*	*	*	*
+1		trialproc	2872	1Row-Hx-Zf-Od-Ae	1Row-Hx-Zf-Od-Ae	500	250	500	N	n	0	*	*	*	*
+1		trialproc	1748	1Row-Hc-Bh-Xf-Ah	1Row-Hc-Bh-Zf-Ah	500	250	500	G	g	3	*	*	X	Z
+1		trialproc	5999	1Row-Xg-Bx-Xg-Hd	1Row-Xg-Zx-Xg-Hd	500	250	500	G	g	2	*	*	B	Z
+1		trialproc	2411	1Row-Hx-Rf-Xd-Ae	1Row-Hx-Of-Xd-Ae	500	250	500	G	g	2	*	*	R	O
+1		trialproc	1416	1Row-Hc-Rd-Xf-Ah	1Row-Hc-Ra-Xf-Ah	500	250	500	L	l	2	D	A	*	*
+1		trialproc	209	1Row-Xd-Xg-Xd-Xg	1Row-Xf-Xg-Xd-Xg	500	250	500	L	l	1	D	F	*	*
+1		trialproc	5497	1Row-Zg-Bg-Zf-Hd	1Row-Zg-Bg-Ef-Hd	500	250	500	G	g	3	*	*	Z	E
+1		trialproc	1537	1Row-Ae-Xd-Rx-Hf	1Row-Ae-Xd-Rx-Hx	500	250	500	L	l	4	F	X	*	*
+1		trialproc	3317	1Row-Gh-Bg-Ef-Hd	1Row-Gh-Bg-Ex-Hd	500	250	500	L	l	3	F	X	*	*
+1		trialproc	2773	1Row-Ae-Bf-Rx-Hd	1Row-Ae-Bf-Rx-Hd	500	250	500	N	n	0	*	*	*	*
+1		trialproc	793	1Row-Zg-Bg-Ef-Hd	1Row-Zg-Bg-Ef-Hd	500	250	500	N	n	0	*	*	*	*
+1		trialproc	3456	1Row-De-Bg-Ef-Hd	1Row-Dg-Bg-Ef-Hd	500	250	500	L	l	1	E	G	*	*
+1		trialproc	5300	1Row-Ae-Xd-Rx-Hd	1Row-Ae-Xd-Zx-Hd	500	250	500	G	g	3	*	*	R	Z
+1		trialproc	3096	1Row-Xg-Xg-Xg-Xg	1Row-Xg-Xd-Xg-Xg	500	250	500	L	l	2	G	D	*	*
+1		trialproc	5781	1Row-Hx-Of-Xd-Ae	1Row-Hx-Of-Od-Ae	500	250	500	G	g	3	*	*	X	O
+1		trialproc	841	1Row-Zg-Bg-Ef-Hd	1Row-Zg-Bg-Zf-Hd	500	250	500	G	g	3	*	*	E	Z
+1		trialproc	5941	1Row-Zf-Bg-Ef-Hd	1Row-Zf-Bg-Ef-Hd	500	250	500	N	n	0	*	*	*	*
+1		trialproc	3466	1Row-De-Bg-Ef-Hd	1Row-De-Bg-Ef-Hd	500	250	500	N	n	0	*	*	*	*
+1		trialproc	4357	1Row-Ae-Rf-Xd-Hf	1Row-Ae-Rf-Xd-Hf	500	250	500	N	n	0	*	*	*	*
+1		trialproc	7275	1Row-Zx-Od-Xf-Ah	1Row-Zx-Rd-Xf-Ah	500	250	500	G	g	2	*	*	O	R
+1		trialproc	4654	1Row-Gh-Zg-Zx-Hd	1Row-Gh-Zg-Zx-Hd	500	250	500	N	n	0	*	*	*	*
+1		trialproc	7624	1Row-Hx-Rf-Xd-Ah	1Row-Hx-Rf-Xd-Ah	500	250	500	N	n	0	*	*	*	*
+1		trialproc	7654	1Row-Rg-Bh-Xg-Bf	1Row-Og-Bh-Xg-Bf	500	250	500	G	g	1	*	*	R	O
+1		trialproc	5359	1Row-Ae-Xd-Rx-Hd	1Row-Ae-Xd-Rx-Hx	500	250	500	L	l	4	D	X	*	*
+1		trialproc	5085	1Row-Xg-Xd-Xd-Xg	1Row-Xg-Xd-Xd-Xd	500	250	500	L	l	4	G	D	*	*
+1		trialproc	2708	1Row-Xg-Bh-Xg-Hd	1Row-Xg-Bx-Xg-Hd	500	250	500	L	l	2	H	X	*	*
+1		trialproc	1327	1Row-Dh-Zg-Ef-Hd	1Row-Dh-Bg-Ef-Hd	500	250	500	G	g	2	*	*	Z	B
+1		trialproc	2950	1Row-Xg-Bh-Xg-Bf	1Row-Og-Bh-Xg-Bf	500	250	500	G	g	1	*	*	X	O
+1		trialproc	5545	1Row-Zg-Bg-Zf-Hd	1Row-Zg-Bg-Zf-Hd	500	250	500	N	n	0	*	*	*	*
+1		trialproc	363	1Row-Hx-Od-Xf-Ah	1Row-Hx-Rd-Xf-Ah	500	250	500	G	g	2	*	*	O	R
+1		trialproc	6668	1Row-Hx-Rd-Xf-Ah	1Row-Hx-Od-Xf-Ah	500	250	500	G	g	2	*	*	R	O
+1		trialproc	7426	1Row-Xd-Xd-Xg-Xg	1Row-Xd-Xd-Xg-Xg	500	250	500	N	n	0	*	*	*	*
+1		trialproc	5308	1Row-Ae-Xd-Rx-Hd	1Row-Ae-Xd-Rx-Hf	500	250	500	L	l	4	D	F	*	*
+1		trialproc	2832	1Row-Ae-Bf-Rx-Hd	1Row-Ae-Bf-Zx-Hd	500	250	500	G	g	3	*	*	R	Z
+1		trialproc	3893	1Row-Xf-Xf-Xf-Xf	1Row-Xf-Xf-Xf-Xl	500	250	500	L	l	4	F	L	*	*
+1		trialproc	3432	1Row-De-Bg-Ef-Hd	1Row-De-Bg-Zf-Hd	500	250	500	G	g	3	*	*	E	Z
+1		trialproc	4229	1Row-Hc-Ra-Xf-Ah	1Row-Hc-Rd-Xf-Ah	500	250	500	L	l	2	A	D	*	*
+1		trialproc	3664	1Row-Xf-Xd-Xd-Xg	1Row-Xf-Xd-Xd-Xg	500	250	500	N	n	0	*	*	*	*
+1		trialproc	1935	1Row-Ae-Zf-Rx-Hd	1Row-Ae-Of-Rx-Hd	500	250	500	G	g	2	*	*	Z	O
+1		trialproc	1387	1Row-Hc-Rd-Xf-Ah	1Row-Hc-Rd-Xf-Ah	500	250	500	N	n	0	*	*	*	*
+1		trialproc	397	1Row-Xd-Xf-Xa-Xg	1Row-Xd-Xf-Xa-Xg	500	250	500	N	n	0	*	*	*	*
+1		trialproc	3678	1Row-Xf-Xd-Xd-Xg	1Row-Xg-Xd-Xd-Xg	500	250	500	L	l	1	F	G	*	*
+1		trialproc	3994	1Row-Zg-Bh-Xg-Of	1Row-Og-Bh-Xg-Of	500	250	500	G	g	1	*	*	Z	O
+1		trialproc	2377	1Row-Hx-Rf-Xd-Ae	1Row-Hx-Rf-Xd-Ae	500	250	500	N	n	0	*	*	*	*
+1		trialproc	1311	1Row-Dh-Zg-Ef-Hd	1Row-Dx-Zg-Ef-Hd	500	250	500	L	l	1	H	X	*	*
+1		trialproc	811	1Row-Zg-Bg-Ef-Hd	1Row-Zx-Bg-Ef-Hd	500	250	500	L	l	1	G	X	*	*
+1		trialproc	1525	1Row-Ae-Xd-Rx-Hf	1Row-Ae-Xd-Rx-Hd	500	250	500	L	l	4	F	D	*	*
+1		trialproc	4867	1Row-Hl-Rf-Xd-Ae	1Row-Hf-Rf-Xd-Ae	500	250	500	L	l	1	L	F	*	*
+1		trialproc	4951	1Row-Xg-Bh-Og-Bf	1Row-Xg-Bh-Og-Bf	500	250	500	N	n	0	*	*	*	*
+1		trialproc	5644	1Row-Xg-Xd-Xg-Xg	1Row-Xg-Xd-Xg-Xg	500	250	500	N	n	0	*	*	*	*
+1		trialproc	496	1Row-Dx-Bg-Ef-Hd	1Row-Dx-Bg-Ef-Hd	500	250	500	N	n	0	*	*	*	*
+1		trialproc	5638	1Row-Xg-Xd-Xg-Xg	1Row-Xg-Xd-Xd-Xg	500	250	500	L	l	3	G	D	*	*
+1		trialproc	6634	1Row-Xf-Xf-Xl-Xl	1Row-Xf-Xf-Xl-Xl	500	250	500	N	n	0	*	*	*	*
+1		trialproc	5446	1Row-Gh-Og-Eh-Hd	1Row-Gh-Og-Eh-Hd	500	250	500	N	n	0	*	*	*	*
+1		trialproc	991	1Row-Gl-Bg-Ah-Hd	1Row-Gl-Bg-Ah-Hd	500	250	500	N	n	0	*	*	*	*
+1		trialproc	2476	1Row-Dg-Bg-Ef-Hd	1Row-Dg-Bg-Ef-Hd	500	250	500	N	n	0	*	*	*	*
+1		trialproc	4456	1Row-Xd-Xf-Xd-Xg	1Row-Xd-Xf-Xd-Xg	500	250	500	N	n	0	*	*	*	*
+1		trialproc	4931	1Row-Xg-Bh-Og-Bf	1Row-Xg-Bh-Xg-Bf	500	250	500	G	g	3	*	*	O	X
+1		trialproc	5347	1Row-Ae-Xd-Rx-Hd	1Row-Ae-Xd-Rx-Hd	500	250	500	N	n	0	*	*	*	*\0
