@@ -1,0 +1,224 @@
+*** Header Start ***
+VersionPersist: 1
+LevelName: Session
+LevelName: Block
+LevelName: Trial
+LevelName: SubTrial
+LevelName: LogLevel5
+LevelName: LogLevel6
+LevelName: LogLevel7
+LevelName: LogLevel8
+LevelName: LogLevel9
+LevelName: LogLevel10
+Experiment: ChangeDetection-1Row
+SessionDate: 04-16-2017
+SessionTime: 13:30:17
+Subject: 1
+Session: 1
+RandomSeed: 237416059
+Group: 1
+Display.RefreshRate: 0.000
+*** Header End ***
+		Level: 3
+		*** LogFrame Start ***
+		Procedure: trialprocp
+		triallistp: 8
+		TrialId: 9252
+		S1: 1Row-Xf-Xf-Xf-Xg
+		S2: 1Row-Xf-Xf-Xf-Xf
+		S1I: 500
+		ISI: 250
+		S2I: 500
+		ChangeType: L
+		Correct: l
+		Running: triallistp
+		triallistp.Cycle: 1
+		triallistp.Sample: 1
+		S2Display.OnsetDelay: 8
+		S2Display.OnsetTime: 11270
+		S2Display.DurationError: -999999
+		S2Display.RTTime: 13375
+		S2Display.ACC: 1
+		S2Display.RT: 2105
+		S2Display.RESP: l
+		S2Display.CRESP: l
+		*** LogFrame End ***
+		Level: 3
+		*** LogFrame Start ***
+		Procedure: trialprocp
+		triallistp: 10
+		TrialId: 9283
+		S1: 1Row-Xf-Xf-Xf-Xg
+		S2: 1Row-Xf-Xf-Xf-Xl
+		S1I: 500
+		ISI: 250
+		S2I: 500
+		ChangeType: L
+		Correct: l
+		Running: triallistp
+		triallistp.Cycle: 1
+		triallistp.Sample: 2
+		S2Display.OnsetDelay: 8
+		S2Display.OnsetTime: 18145
+		S2Display.DurationError: -999999
+		S2Display.RTTime: 20367
+		S2Display.ACC: 0
+		S2Display.RT: 2222
+		S2Display.RESP: n
+		S2Display.CRESP: l
+		*** LogFrame End ***
+	Level: 2
+	*** LogFrame Start ***
+	blocklistp: 1
+	practiceexperimental: practice
+	Procedure: blockprocp
+	blocklistp.Cycle: 1
+	blocklistp.Sample: 1
+	Running: blocklistp
+	*** LogFrame End ***
+		Level: 3
+		*** LogFrame Start ***
+		Procedure: trialproc
+		TrialId: 6040
+		S1: 1Row-Xg-Bx-Xg-Hd
+		S2: 1Row-Xg-Bx-Xg-Hd
+		S1I: 500
+		ISI: 250
+		S2I: 500
+		ChangeType: N
+		Correct: n
+		triallist: 48
+		ChangePos: 0
+		Lbefore: *
+		Lafter: *
+		Gbefore: *
+		Gafter: *
+		Running: triallist
+		S2Display.OnsetDelay: 8
+		S2Display.OnsetTime: 32053
+		S2Display.DurationError: -999999
+		S2Display.RTTime: 41712
+		S2Display.ACC: 0
+		S2Display.RT: 9659
+		S2Display.RESP: g
+		S2Display.CRESP: n
+		triallist.Cycle: 1
+		triallist.Sample: 1
+		*** LogFrame End ***
+		Level: 3
+		*** LogFrame Start ***
+		Procedure: trialproc
+		TrialId: 991
+		S1: 1Row-Gl-Bg-Ah-Hd
+		S2: 1Row-Gl-Bg-Ah-Hd
+		S1I: 500
+		ISI: 250
+		S2I: 500
+		ChangeType: N
+		Correct: n
+		triallist: 236
+		ChangePos: 0
+		Lbefore: *
+		Lafter: *
+		Gbefore: *
+		Gafter: *
+		Running: triallist
+		S2Display.OnsetDelay: 8
+		S2Display.OnsetTime: 44279
+		S2Display.DurationError: -999999
+		S2Display.RTTime: 46440
+		S2Display.ACC: 1
+		S2Display.RT: 2161
+		S2Display.RESP: n
+		S2Display.CRESP: n
+		triallist.Cycle: 1
+		triallist.Sample: 2
+		*** LogFrame End ***
+	Level: 2
+	*** LogFrame Start ***
+	practiceexperimental: experimental
+	Procedure: blockproc
+	blocklist: 1
+	Running: blocklist
+	blocklist.Cycle: 1
+	blocklist.Sample: 1
+	*** LogFrame End ***
+		Level: 3
+		*** LogFrame Start ***
+		Procedure: trialproc
+		TrialId: 810
+		S1: 1Row-Zg-Bg-Ef-Hd
+		S2: 1Row-Dg-Bg-Ef-Hd
+		S1I: 500
+		ISI: 250
+		S2I: 500
+		ChangeType: G
+		Correct: g
+		triallist: 41
+		ChangePos: 1
+		Lbefore: *
+		Lafter: *
+		Gbefore: Z
+		Gafter: D
+		Running: triallist
+		S2Display.OnsetDelay: 8
+		S2Display.OnsetTime: 52113
+		S2Display.DurationError: -999999
+		S2Display.RTTime: 53759
+		S2Display.ACC: 1
+		S2Display.RT: 1646
+		S2Display.RESP: g
+		S2Display.CRESP: g
+		triallist.Cycle: 2
+		triallist.Sample: 3
+		*** LogFrame End ***
+		Level: 3
+		*** LogFrame Start ***
+		Procedure: trialproc
+		TrialId: 4797
+		S1: 1Row-Ha-Bh-Xg-Ah
+		S2: 1Row-Ha-Bh-Zg-Ah
+		S1I: 500
+		ISI: 250
+		S2I: 500
+		ChangeType: G
+		Correct: g
+		triallist: 86
+		ChangePos: 3
+		Lbefore: *
+		Lafter: *
+		Gbefore: X
+		Gafter: Z
+		Running: triallist
+		S2Display.OnsetDelay: 8
+		S2Display.OnsetTime: 56327
+		S2Display.DurationError: -999999
+		S2Display.RTTime: 57895
+		S2Display.ACC: 1
+		S2Display.RT: 1568
+		S2Display.RESP: g
+		S2Display.CRESP: g
+		triallist.Cycle: 2
+		triallist.Sample: 4
+		*** LogFrame End ***
+	Level: 2
+	*** LogFrame Start ***
+	practiceexperimental: experimental
+	Procedure: blockproc
+	blocklist: 1
+	Running: blocklist
+	blocklist.Cycle: 2
+	blocklist.Sample: 2
+	*** LogFrame End ***
+Level: 1
+*** LogFrame Start ***
+Experiment: ChangeDetection-1Row
+SessionDate: 04-16-2017
+SessionTime: 13:30:17
+Subject: 1
+Session: 1
+RandomSeed: 237416059
+Group: 1
+Display.RefreshRate: 0.000
+Clock.Information: <?xml version="1.0"?>\n<Clock xmlns:dt="urn:schemas-microsoft-com:datatypes"><Description dt:dt="string">E-Prime Primary Realtime Clock</Description><StartTime><Timestamp dt:dt="int">0</Timestamp><DateUtc dt:dt="string">2017-04-16T11:30:17Z</DateUtc></StartTime><FrequencyChanges><FrequencyChange><Frequency dt:dt="r8">10000000</Frequency><Timestamp dt:dt="r8">90429801484</Timestamp><Current dt:dt="r8">0</Current><DateUtc dt:dt="string">2017-04-16T11:30:17Z</DateUtc></FrequencyChange></FrequencyChanges></Clock>\n
+*** LogFrame End ***
