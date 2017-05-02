@@ -2,7 +2,7 @@
 '
 '
 '	C:\Users\Raul\Documents\My Experiments\Hierarchical-CB-8-CIRCLE.ebs
-'	Generated on: 4/27/2017	12:43:14
+'	Generated on: 5/2/2017	21:40:55
 '
 '
 '	This file generated with E-Studio interface.
@@ -1222,7 +1222,7 @@ Sub InitObjects(c As Context)
 	stimuli.Load
 
 	Set stimuli.TerminateCondition = Cycles(1)
-	Set stimuli.ResetCondition = Samples(4)
+	Set stimuli.ResetCondition = Samples(528)
 	stimuli.Reset
 	
 	Set matrix1 = New Slide
@@ -1363,7 +1363,7 @@ Sub InitObjects(c As Context)
 
 	InitTextDisplayDefaults blank
 
-	blank.Text = "\n\nAhora pincha sobre el estímulo que cambiaba"
+	blank.Text = "Ahora pincha sobre el estímulo que cambiaba"
 	blank.AlignVertical = "top"
 	blank.FontName = ""
 	blank.FontSize = "20"
@@ -1430,8 +1430,8 @@ Sub InitObjects(c As Context)
 	InitSlideImageDefaults matrix2_SlideImage
 
 	matrix2_SlideImage.Stretch = CLogical("Yes")
-	matrix2_SlideImage.Width = "10%"
-	matrix2_SlideImage.Height = "10%"
+	matrix2_SlideImage.Width = "136"
+	matrix2_SlideImage.Height = "136"
 	matrix2.States.Item("Default").Objects.Add matrix2_SlideImage, "Image9"
 
 	Set matrix2_SlideImage = New SlideImage
@@ -1440,10 +1440,10 @@ Sub InitObjects(c As Context)
 	InitSlideImageDefaults matrix2_SlideImage
 
 	matrix2_SlideImage.Stretch = CLogical("Yes")
-	matrix2_SlideImage.X = "34%"
-	matrix2_SlideImage.Y = "32%"
-	matrix2_SlideImage.Width = "10%"
-	matrix2_SlideImage.Height = "10%"
+	matrix2_SlideImage.X = "29%"
+	matrix2_SlideImage.Y = "27%"
+	matrix2_SlideImage.Width = "136"
+	matrix2_SlideImage.Height = "136"
 	matrix2.States.Item("Default").Objects.Add matrix2_SlideImage, "Image8"
 
 	Set matrix2_SlideImage = New SlideImage
@@ -1452,10 +1452,10 @@ Sub InitObjects(c As Context)
 	InitSlideImageDefaults matrix2_SlideImage
 
 	matrix2_SlideImage.Stretch = CLogical("Yes")
-	matrix2_SlideImage.X = "25%"
+	matrix2_SlideImage.X = "20%"
 	matrix2_SlideImage.Y = "50%"
-	matrix2_SlideImage.Width = "10%"
-	matrix2_SlideImage.Height = "10%"
+	matrix2_SlideImage.Width = "136"
+	matrix2_SlideImage.Height = "136"
 	matrix2.States.Item("Default").Objects.Add matrix2_SlideImage, "Image7"
 
 	Set matrix2_SlideImage = New SlideImage
@@ -1464,10 +1464,10 @@ Sub InitObjects(c As Context)
 	InitSlideImageDefaults matrix2_SlideImage
 
 	matrix2_SlideImage.Stretch = CLogical("Yes")
-	matrix2_SlideImage.X = "34%"
-	matrix2_SlideImage.Y = "68%"
-	matrix2_SlideImage.Width = "10%"
-	matrix2_SlideImage.Height = "10%"
+	matrix2_SlideImage.X = "29%"
+	matrix2_SlideImage.Y = "73%"
+	matrix2_SlideImage.Width = "136"
+	matrix2_SlideImage.Height = "136"
 	matrix2.States.Item("Default").Objects.Add matrix2_SlideImage, "Image6"
 
 	Set matrix2_SlideImage = New SlideImage
@@ -1477,9 +1477,9 @@ Sub InitObjects(c As Context)
 
 	matrix2_SlideImage.Stretch = CLogical("Yes")
 	matrix2_SlideImage.X = "50%"
-	matrix2_SlideImage.Y = "80%"
-	matrix2_SlideImage.Width = "10%"
-	matrix2_SlideImage.Height = "10%"
+	matrix2_SlideImage.Y = "85%"
+	matrix2_SlideImage.Width = "136"
+	matrix2_SlideImage.Height = "136"
 	matrix2.States.Item("Default").Objects.Add matrix2_SlideImage, "Image5"
 
 	Set matrix2_SlideImage = New SlideImage
@@ -1488,10 +1488,10 @@ Sub InitObjects(c As Context)
 	InitSlideImageDefaults matrix2_SlideImage
 
 	matrix2_SlideImage.Stretch = CLogical("Yes")
-	matrix2_SlideImage.X = "66%"
-	matrix2_SlideImage.Y = "68%"
-	matrix2_SlideImage.Width = "10%"
-	matrix2_SlideImage.Height = "10%"
+	matrix2_SlideImage.X = "71%"
+	matrix2_SlideImage.Y = "73%"
+	matrix2_SlideImage.Width = "136"
+	matrix2_SlideImage.Height = "136"
 	matrix2.States.Item("Default").Objects.Add matrix2_SlideImage, "Image4"
 
 	Set matrix2_SlideImage = New SlideImage
@@ -1500,10 +1500,10 @@ Sub InitObjects(c As Context)
 	InitSlideImageDefaults matrix2_SlideImage
 
 	matrix2_SlideImage.Stretch = CLogical("Yes")
-	matrix2_SlideImage.X = "75%"
+	matrix2_SlideImage.X = "80%"
 	matrix2_SlideImage.Y = "50%"
-	matrix2_SlideImage.Width = "10%"
-	matrix2_SlideImage.Height = "10%"
+	matrix2_SlideImage.Width = "136"
+	matrix2_SlideImage.Height = "136"
 	matrix2.States.Item("Default").Objects.Add matrix2_SlideImage, "Image3"
 
 	Set matrix2_SlideImage = New SlideImage
@@ -1512,10 +1512,10 @@ Sub InitObjects(c As Context)
 	InitSlideImageDefaults matrix2_SlideImage
 
 	matrix2_SlideImage.Stretch = CLogical("Yes")
-	matrix2_SlideImage.X = "66%"
-	matrix2_SlideImage.Y = "32%"
-	matrix2_SlideImage.Width = "10%"
-	matrix2_SlideImage.Height = "10%"
+	matrix2_SlideImage.X = "71%"
+	matrix2_SlideImage.Y = "28%"
+	matrix2_SlideImage.Width = "136"
+	matrix2_SlideImage.Height = "136"
 	matrix2.States.Item("Default").Objects.Add matrix2_SlideImage, "Image2"
 
 	Set matrix2_SlideImage = New SlideImage
@@ -1525,9 +1525,9 @@ Sub InitObjects(c As Context)
 
 	matrix2_SlideImage.Stretch = CLogical("Yes")
 	matrix2_SlideImage.X = "50%"
-	matrix2_SlideImage.Y = "20%"
-	matrix2_SlideImage.Width = "10%"
-	matrix2_SlideImage.Height = "10%"
+	matrix2_SlideImage.Y = "15%"
+	matrix2_SlideImage.Width = "136"
+	matrix2_SlideImage.Height = "136"
 	matrix2.States.Item("Default").Objects.Add matrix2_SlideImage, "Image1"
 	matrix2.ActiveState = "Default"
 
@@ -1556,10 +1556,10 @@ Sub InitObjects(c As Context)
 	InitSlideImageDefaults matrix11_SlideImage
 
 	matrix11_SlideImage.Stretch = CLogical("Yes")
-	matrix11_SlideImage.X = "34%"
-	matrix11_SlideImage.Y = "32%"
-	matrix11_SlideImage.Width = "10%"
-	matrix11_SlideImage.Height = "10%"
+	matrix11_SlideImage.X = "29%"
+	matrix11_SlideImage.Y = "27%"
+	matrix11_SlideImage.Width = "136"
+	matrix11_SlideImage.Height = "136"
 	matrix11.States.Item("Default").Objects.Add matrix11_SlideImage, "Image8"
 
 	Set matrix11_SlideImage = New SlideImage
@@ -1568,10 +1568,10 @@ Sub InitObjects(c As Context)
 	InitSlideImageDefaults matrix11_SlideImage
 
 	matrix11_SlideImage.Stretch = CLogical("Yes")
-	matrix11_SlideImage.X = "25%"
+	matrix11_SlideImage.X = "20%"
 	matrix11_SlideImage.Y = "50%"
-	matrix11_SlideImage.Width = "10%"
-	matrix11_SlideImage.Height = "10%"
+	matrix11_SlideImage.Width = "136"
+	matrix11_SlideImage.Height = "136"
 	matrix11.States.Item("Default").Objects.Add matrix11_SlideImage, "Image7"
 
 	Set matrix11_SlideImage = New SlideImage
@@ -1580,10 +1580,10 @@ Sub InitObjects(c As Context)
 	InitSlideImageDefaults matrix11_SlideImage
 
 	matrix11_SlideImage.Stretch = CLogical("Yes")
-	matrix11_SlideImage.X = "34%"
-	matrix11_SlideImage.Y = "68%"
-	matrix11_SlideImage.Width = "10%"
-	matrix11_SlideImage.Height = "10%"
+	matrix11_SlideImage.X = "29%"
+	matrix11_SlideImage.Y = "73%"
+	matrix11_SlideImage.Width = "136"
+	matrix11_SlideImage.Height = "136"
 	matrix11.States.Item("Default").Objects.Add matrix11_SlideImage, "Image6"
 
 	Set matrix11_SlideImage = New SlideImage
@@ -1593,9 +1593,9 @@ Sub InitObjects(c As Context)
 
 	matrix11_SlideImage.Stretch = CLogical("Yes")
 	matrix11_SlideImage.X = "50%"
-	matrix11_SlideImage.Y = "80%"
-	matrix11_SlideImage.Width = "10%"
-	matrix11_SlideImage.Height = "10%"
+	matrix11_SlideImage.Y = "85%"
+	matrix11_SlideImage.Width = "136"
+	matrix11_SlideImage.Height = "136"
 	matrix11.States.Item("Default").Objects.Add matrix11_SlideImage, "Image5"
 
 	Set matrix11_SlideImage = New SlideImage
@@ -1604,10 +1604,10 @@ Sub InitObjects(c As Context)
 	InitSlideImageDefaults matrix11_SlideImage
 
 	matrix11_SlideImage.Stretch = CLogical("Yes")
-	matrix11_SlideImage.X = "66%"
-	matrix11_SlideImage.Y = "68%"
-	matrix11_SlideImage.Width = "10%"
-	matrix11_SlideImage.Height = "10%"
+	matrix11_SlideImage.X = "71%"
+	matrix11_SlideImage.Y = "73%"
+	matrix11_SlideImage.Width = "136"
+	matrix11_SlideImage.Height = "136"
 	matrix11.States.Item("Default").Objects.Add matrix11_SlideImage, "Image4"
 
 	Set matrix11_SlideImage = New SlideImage
@@ -1616,10 +1616,10 @@ Sub InitObjects(c As Context)
 	InitSlideImageDefaults matrix11_SlideImage
 
 	matrix11_SlideImage.Stretch = CLogical("Yes")
-	matrix11_SlideImage.X = "75%"
+	matrix11_SlideImage.X = "80%"
 	matrix11_SlideImage.Y = "50%"
-	matrix11_SlideImage.Width = "10%"
-	matrix11_SlideImage.Height = "10%"
+	matrix11_SlideImage.Width = "136"
+	matrix11_SlideImage.Height = "136"
 	matrix11.States.Item("Default").Objects.Add matrix11_SlideImage, "Image3"
 
 	Set matrix11_SlideImage = New SlideImage
@@ -1628,10 +1628,10 @@ Sub InitObjects(c As Context)
 	InitSlideImageDefaults matrix11_SlideImage
 
 	matrix11_SlideImage.Stretch = CLogical("Yes")
-	matrix11_SlideImage.X = "66%"
-	matrix11_SlideImage.Y = "32%"
-	matrix11_SlideImage.Width = "10%"
-	matrix11_SlideImage.Height = "10%"
+	matrix11_SlideImage.X = "71%"
+	matrix11_SlideImage.Y = "28%"
+	matrix11_SlideImage.Width = "136"
+	matrix11_SlideImage.Height = "136"
 	matrix11.States.Item("Default").Objects.Add matrix11_SlideImage, "Image2"
 
 	Set matrix11_SlideImage = New SlideImage
@@ -1641,9 +1641,9 @@ Sub InitObjects(c As Context)
 
 	matrix11_SlideImage.Stretch = CLogical("Yes")
 	matrix11_SlideImage.X = "50%"
-	matrix11_SlideImage.Y = "20%"
-	matrix11_SlideImage.Width = "10%"
-	matrix11_SlideImage.Height = "10%"
+	matrix11_SlideImage.Y = "15%"
+	matrix11_SlideImage.Width = "136"
+	matrix11_SlideImage.Height = "136"
 	matrix11.States.Item("Default").Objects.Add matrix11_SlideImage, "Image1"
 	matrix11.ActiveState = "Default"
 
@@ -1675,10 +1675,10 @@ Sub InitObjects(c As Context)
 	InitSlideTextDefaults rating_SlideText
 
 	rating_SlideText.Text = ""
-	rating_SlideText.X = "34%"
-	rating_SlideText.Y = "32%"
-	rating_SlideText.Width = "10%"
-	rating_SlideText.Height = "10%"
+	rating_SlideText.X = "29%"
+	rating_SlideText.Y = "27%"
+	rating_SlideText.Width = "136"
+	rating_SlideText.Height = "136"
 	rating_SlideText.ForeColor = CColor("white")
 	rating_SlideText.BackColor = CColor("green")
 	rating_SlideText.BackStyle = "transparent"
@@ -1691,10 +1691,10 @@ Sub InitObjects(c As Context)
 	InitSlideTextDefaults rating_SlideText
 
 	rating_SlideText.Text = ""
-	rating_SlideText.X = "25%"
+	rating_SlideText.X = "20%"
 	rating_SlideText.Y = "50%"
-	rating_SlideText.Width = "10%"
-	rating_SlideText.Height = "10%"
+	rating_SlideText.Width = "136"
+	rating_SlideText.Height = "136"
 	rating_SlideText.ForeColor = CColor("white")
 	rating_SlideText.BackColor = CColor("green")
 	rating_SlideText.BackStyle = "transparent"
@@ -1707,10 +1707,10 @@ Sub InitObjects(c As Context)
 	InitSlideTextDefaults rating_SlideText
 
 	rating_SlideText.Text = ""
-	rating_SlideText.X = "34%"
-	rating_SlideText.Y = "68%"
-	rating_SlideText.Width = "10%"
-	rating_SlideText.Height = "10%"
+	rating_SlideText.X = "29%"
+	rating_SlideText.Y = "73%"
+	rating_SlideText.Width = "136"
+	rating_SlideText.Height = "136"
 	rating_SlideText.ForeColor = CColor("white")
 	rating_SlideText.BackColor = CColor("green")
 	rating_SlideText.BackStyle = "transparent"
@@ -1724,9 +1724,9 @@ Sub InitObjects(c As Context)
 
 	rating_SlideText.Text = ""
 	rating_SlideText.X = "50%"
-	rating_SlideText.Y = "80%"
-	rating_SlideText.Width = "10%"
-	rating_SlideText.Height = "10%"
+	rating_SlideText.Y = "85%"
+	rating_SlideText.Width = "136"
+	rating_SlideText.Height = "136"
 	rating_SlideText.ForeColor = CColor("white")
 	rating_SlideText.BackColor = CColor("green")
 	rating_SlideText.BackStyle = "transparent"
@@ -1739,10 +1739,10 @@ Sub InitObjects(c As Context)
 	InitSlideTextDefaults rating_SlideText
 
 	rating_SlideText.Text = ""
-	rating_SlideText.X = "66%"
-	rating_SlideText.Y = "68%"
-	rating_SlideText.Width = "10%"
-	rating_SlideText.Height = "10%"
+	rating_SlideText.X = "71%"
+	rating_SlideText.Y = "73%"
+	rating_SlideText.Width = "136"
+	rating_SlideText.Height = "136"
 	rating_SlideText.ForeColor = CColor("white")
 	rating_SlideText.BackColor = CColor("green")
 	rating_SlideText.BackStyle = "transparent"
@@ -1755,10 +1755,10 @@ Sub InitObjects(c As Context)
 	InitSlideTextDefaults rating_SlideText
 
 	rating_SlideText.Text = ""
-	rating_SlideText.X = "75%"
+	rating_SlideText.X = "80%"
 	rating_SlideText.Y = "50%"
-	rating_SlideText.Width = "10%"
-	rating_SlideText.Height = "10%"
+	rating_SlideText.Width = "136"
+	rating_SlideText.Height = "136"
 	rating_SlideText.ForeColor = CColor("white")
 	rating_SlideText.BackColor = CColor("green")
 	rating_SlideText.BackStyle = "transparent"
@@ -1771,10 +1771,10 @@ Sub InitObjects(c As Context)
 	InitSlideTextDefaults rating_SlideText
 
 	rating_SlideText.Text = ""
-	rating_SlideText.X = "66%"
-	rating_SlideText.Y = "32%"
-	rating_SlideText.Width = "10%"
-	rating_SlideText.Height = "10%"
+	rating_SlideText.X = "71%"
+	rating_SlideText.Y = "28%"
+	rating_SlideText.Width = "136"
+	rating_SlideText.Height = "136"
 	rating_SlideText.ForeColor = CColor("white")
 	rating_SlideText.BackColor = CColor("green")
 	rating_SlideText.BackStyle = "transparent"
@@ -1788,9 +1788,9 @@ Sub InitObjects(c As Context)
 
 	rating_SlideText.Text = ""
 	rating_SlideText.X = "50%"
-	rating_SlideText.Y = "20%"
-	rating_SlideText.Width = "10%"
-	rating_SlideText.Height = "10%"
+	rating_SlideText.Y = "15%"
+	rating_SlideText.Width = "136"
+	rating_SlideText.Height = "136"
 	rating_SlideText.ForeColor = CColor("white")
 	rating_SlideText.BackColor = CColor("green")
 	rating_SlideText.BackStyle = "transparent"
@@ -1803,10 +1803,10 @@ Sub InitObjects(c As Context)
 	InitSlideImageDefaults rating_SlideImage
 
 	rating_SlideImage.Stretch = CLogical("Yes")
-	rating_SlideImage.X = "34%"
-	rating_SlideImage.Y = "32%"
-	rating_SlideImage.Width = "10%"
-	rating_SlideImage.Height = "10%"
+	rating_SlideImage.X = "29%"
+	rating_SlideImage.Y = "27%"
+	rating_SlideImage.Width = "136"
+	rating_SlideImage.Height = "136"
 	rating.States.Item("cortada").Objects.Add rating_SlideImage, "Image8"
 
 	Set rating_SlideImage = New SlideImage
@@ -1815,10 +1815,10 @@ Sub InitObjects(c As Context)
 	InitSlideImageDefaults rating_SlideImage
 
 	rating_SlideImage.Stretch = CLogical("Yes")
-	rating_SlideImage.X = "25%"
+	rating_SlideImage.X = "20%"
 	rating_SlideImage.Y = "50%"
-	rating_SlideImage.Width = "10%"
-	rating_SlideImage.Height = "10%"
+	rating_SlideImage.Width = "136"
+	rating_SlideImage.Height = "136"
 	rating.States.Item("cortada").Objects.Add rating_SlideImage, "Image7"
 
 	Set rating_SlideImage = New SlideImage
@@ -1827,10 +1827,10 @@ Sub InitObjects(c As Context)
 	InitSlideImageDefaults rating_SlideImage
 
 	rating_SlideImage.Stretch = CLogical("Yes")
-	rating_SlideImage.X = "34%"
-	rating_SlideImage.Y = "68%"
-	rating_SlideImage.Width = "10%"
-	rating_SlideImage.Height = "10%"
+	rating_SlideImage.X = "29%"
+	rating_SlideImage.Y = "73%"
+	rating_SlideImage.Width = "136"
+	rating_SlideImage.Height = "136"
 	rating.States.Item("cortada").Objects.Add rating_SlideImage, "Image6"
 
 	Set rating_SlideImage = New SlideImage
@@ -1840,9 +1840,9 @@ Sub InitObjects(c As Context)
 
 	rating_SlideImage.Stretch = CLogical("Yes")
 	rating_SlideImage.X = "50%"
-	rating_SlideImage.Y = "80%"
-	rating_SlideImage.Width = "10%"
-	rating_SlideImage.Height = "10%"
+	rating_SlideImage.Y = "85%"
+	rating_SlideImage.Width = "136"
+	rating_SlideImage.Height = "136"
 	rating.States.Item("cortada").Objects.Add rating_SlideImage, "Image5"
 
 	Set rating_SlideImage = New SlideImage
@@ -1851,10 +1851,10 @@ Sub InitObjects(c As Context)
 	InitSlideImageDefaults rating_SlideImage
 
 	rating_SlideImage.Stretch = CLogical("Yes")
-	rating_SlideImage.X = "66%"
-	rating_SlideImage.Y = "68%"
-	rating_SlideImage.Width = "10%"
-	rating_SlideImage.Height = "10%"
+	rating_SlideImage.X = "71%"
+	rating_SlideImage.Y = "73%"
+	rating_SlideImage.Width = "136"
+	rating_SlideImage.Height = "136"
 	rating.States.Item("cortada").Objects.Add rating_SlideImage, "Image4"
 
 	Set rating_SlideImage = New SlideImage
@@ -1863,10 +1863,10 @@ Sub InitObjects(c As Context)
 	InitSlideImageDefaults rating_SlideImage
 
 	rating_SlideImage.Stretch = CLogical("Yes")
-	rating_SlideImage.X = "75%"
+	rating_SlideImage.X = "80%"
 	rating_SlideImage.Y = "50%"
-	rating_SlideImage.Width = "10%"
-	rating_SlideImage.Height = "10%"
+	rating_SlideImage.Width = "136"
+	rating_SlideImage.Height = "136"
 	rating.States.Item("cortada").Objects.Add rating_SlideImage, "Image3"
 
 	Set rating_SlideImage = New SlideImage
@@ -1875,10 +1875,10 @@ Sub InitObjects(c As Context)
 	InitSlideImageDefaults rating_SlideImage
 
 	rating_SlideImage.Stretch = CLogical("Yes")
-	rating_SlideImage.X = "66%"
-	rating_SlideImage.Y = "32%"
-	rating_SlideImage.Width = "10%"
-	rating_SlideImage.Height = "10%"
+	rating_SlideImage.X = "71%"
+	rating_SlideImage.Y = "28%"
+	rating_SlideImage.Width = "136"
+	rating_SlideImage.Height = "136"
 	rating.States.Item("cortada").Objects.Add rating_SlideImage, "Image2"
 
 	Set rating_SlideImage = New SlideImage
@@ -1888,9 +1888,9 @@ Sub InitObjects(c As Context)
 
 	rating_SlideImage.Stretch = CLogical("Yes")
 	rating_SlideImage.X = "50%"
-	rating_SlideImage.Y = "20%"
-	rating_SlideImage.Width = "10%"
-	rating_SlideImage.Height = "10%"
+	rating_SlideImage.Y = "15%"
+	rating_SlideImage.Width = "136"
+	rating_SlideImage.Height = "136"
 	rating.States.Item("cortada").Objects.Add rating_SlideImage, "Image1"
 	rating.ActiveState = "cortada"
 
@@ -1930,7 +1930,7 @@ Sub InitObjects(c As Context)
 
 	InitTextDisplayDefaults experimental
 
-	experimental.Text = "La FASE DE  PRÁCTICA HA TERMINADO.\n\nAvise al experimentador y espere sus indicaciones\n\n\n\n\n\n\n\n\n"
+	experimental.Text = "LA FASE DE PRÁCTICA HA TERMINADO.\n\nAvise al experimentador y espere sus indicaciones\n\n\n\n\n\n\n\n\n"
 	experimental.BackColor = CColor("silver")
 	experimental.FontName = "Arial"
 	experimental.FontBold = CLogical("No")
@@ -2021,7 +2021,7 @@ Sub InitObjects(c As Context)
 	triallistp.Load
 
 	Set triallistp.TerminateCondition = Cycles(1)
-	Set triallistp.ResetCondition = Samples(10)
+	Set triallistp.ResetCondition = Samples(2)
 	triallistp.Reset
 	
 	Set experimental2 = New TextDisplay
@@ -2454,114 +2454,638 @@ Weight	Nested	Procedure	practisexp
 
 [DataSection_triallist(1)]
 Weight	Nested	Procedure	s1	s2	s3	s4	s5	s6	s7	s8	s9	x9	y9	changecorrect
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
-1	stimuli,positions,iapslist	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]\0
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]
+1	stimuli,positions	trialproc	\[stimulus:1\]	\[stimulus:2\]	\[stimulus:3\]	\[stimulus:4\]	\[stimulus:5\]	\[stimulus:6\]	\[stimulus:7\]	\[stimulus:8\]	\[stimulus:9\]	\[x\]	\[y\]	\[positionum\]\0
 
 [DataSection_positions(1)]
 Weight	Nested	Procedure	x	y	positionum
-1			50	20	1
-1			66	32	2
-1			75	50	3
-1			66	68	4
-1			50	80	5
-1			34	68	6
-1			25	50	7
-1			34	32	8\0
+1			50	15	1
+1			71	28	2
+1			80	50	3
+1			71	73	4
+1			50	85	5
+1			29	73	6
+1			20	50	7
+1			29	27	8\0
 
 [DataSection_stimuli(1)]
 Weight	Nested	Procedure	stimulus
-1			images/Ac.bmp
-1			images/Af.bmp
-1			images/An.bmp
-1			images/Az.bmp\0
+1			BMPs/Ac.bmp
+1			BMPs/Ae.bmp
+1			BMPs/Af.bmp
+1			BMPs/Ag.bmp
+1			BMPs/Ah.bmp
+1			BMPs/Ai.bmp
+1			BMPs/Aj.bmp
+1			BMPs/Ak.bmp
+1			BMPs/Al.bmp
+1			BMPs/Am.bmp
+1			BMPs/An.bmp
+1			BMPs/Ao.bmp
+1			BMPs/Ap.bmp
+1			BMPs/Ar.bmp
+1			BMPs/As.bmp
+1			BMPs/At.bmp
+1			BMPs/Au.bmp
+1			BMPs/Av.bmp
+1			BMPs/Aw.bmp
+1			BMPs/Ax.bmp
+1			BMPs/Ay.bmp
+1			BMPs/Az.bmp
+1			BMPs/Ca.bmp
+1			BMPs/Ce.bmp
+1			BMPs/Cf.bmp
+1			BMPs/Cg.bmp
+1			BMPs/Ch.bmp
+1			BMPs/Ci.bmp
+1			BMPs/Cj.bmp
+1			BMPs/Ck.bmp
+1			BMPs/Cl.bmp
+1			BMPs/Cm.bmp
+1			BMPs/Cn.bmp
+1			BMPs/Co.bmp
+1			BMPs/Cp.bmp
+1			BMPs/Cr.bmp
+1			BMPs/Cs.bmp
+1			BMPs/Ct.bmp
+1			BMPs/Cu.bmp
+1			BMPs/Cv.bmp
+1			BMPs/Cw.bmp
+1			BMPs/Cx.bmp
+1			BMPs/Cy.bmp
+1			BMPs/Cz.bmp
+1			BMPs/Da.bmp
+1			BMPs/Dc.bmp
+1			BMPs/De.bmp
+1			BMPs/Df.bmp
+1			BMPs/Dg.bmp
+1			BMPs/Dh.bmp
+1			BMPs/Di.bmp
+1			BMPs/Dj.bmp
+1			BMPs/Dk.bmp
+1			BMPs/Dl.bmp
+1			BMPs/Dm.bmp
+1			BMPs/Dn.bmp
+1			BMPs/Dp.bmp
+1			BMPs/Dr.bmp
+1			BMPs/Ds.bmp
+1			BMPs/Dt.bmp
+1			BMPs/Du.bmp
+1			BMPs/Dv.bmp
+1			BMPs/Dw.bmp
+1			BMPs/Dx.bmp
+1			BMPs/Dy.bmp
+1			BMPs/Dz.bmp
+1			BMPs/Ea.bmp
+1			BMPs/Ec.bmp
+1			BMPs/Ef.bmp
+1			BMPs/Eg.bmp
+1			BMPs/Eh.bmp
+1			BMPs/Ei.bmp
+1			BMPs/Ej.bmp
+1			BMPs/Ek.bmp
+1			BMPs/El.bmp
+1			BMPs/Em.bmp
+1			BMPs/En.bmp
+1			BMPs/Eo.bmp
+1			BMPs/Ep.bmp
+1			BMPs/Er.bmp
+1			BMPs/Es.bmp
+1			BMPs/Et.bmp
+1			BMPs/Eu.bmp
+1			BMPs/Ev.bmp
+1			BMPs/Ew.bmp
+1			BMPs/Ex.bmp
+1			BMPs/Ey.bmp
+1			BMPs/Ez.bmp
+1			BMPs/Fa.bmp
+1			BMPs/Fc.bmp
+1			BMPs/Fe.bmp
+1			BMPs/Fg.bmp
+1			BMPs/Fh.bmp
+1			BMPs/Fi.bmp
+1			BMPs/Fj.bmp
+1			BMPs/Fk.bmp
+1			BMPs/Fl.bmp
+1			BMPs/Fm.bmp
+1			BMPs/Fn.bmp
+1			BMPs/Fo.bmp
+1			BMPs/Fp.bmp
+1			BMPs/Fr.bmp
+1			BMPs/Fs.bmp
+1			BMPs/Ft.bmp
+1			BMPs/Fu.bmp
+1			BMPs/Fv.bmp
+1			BMPs/Fw.bmp
+1			BMPs/Fx.bmp
+1			BMPs/Fy.bmp
+1			BMPs/Fz.bmp
+1			BMPs/Ga.bmp
+1			BMPs/Gc.bmp
+1			BMPs/Ge.bmp
+1			BMPs/Gf.bmp
+1			BMPs/Gh.bmp
+1			BMPs/Gi.bmp
+1			BMPs/Gj.bmp
+1			BMPs/Gk.bmp
+1			BMPs/Gl.bmp
+1			BMPs/Gm.bmp
+1			BMPs/Gn.bmp
+1			BMPs/Go.bmp
+1			BMPs/Gp.bmp
+1			BMPs/Gr.bmp
+1			BMPs/Gs.bmp
+1			BMPs/Gt.bmp
+1			BMPs/Gu.bmp
+1			BMPs/Gv.bmp
+1			BMPs/Gw.bmp
+1			BMPs/Gx.bmp
+1			BMPs/Gy.bmp
+1			BMPs/Gz.bmp
+1			BMPs/Ha.bmp
+1			BMPs/Hc.bmp
+1			BMPs/He.bmp
+1			BMPs/Hf.bmp
+1			BMPs/Hg.bmp
+1			BMPs/Hi.bmp
+1			BMPs/Hj.bmp
+1			BMPs/Hk.bmp
+1			BMPs/Hl.bmp
+1			BMPs/Hm.bmp
+1			BMPs/Hn.bmp
+1			BMPs/Ho.bmp
+1			BMPs/Hp.bmp
+1			BMPs/Hr.bmp
+1			BMPs/Hs.bmp
+1			BMPs/Ht.bmp
+1			BMPs/Hu.bmp
+1			BMPs/Hv.bmp
+1			BMPs/Hw.bmp
+1			BMPs/Hx.bmp
+1			BMPs/Hy.bmp
+1			BMPs/Hz.bmp
+1			BMPs/Ia.bmp
+1			BMPs/Ic.bmp
+1			BMPs/Ie.bmp
+1			BMPs/If.bmp
+1			BMPs/Ig.bmp
+1			BMPs/Ih.bmp
+1			BMPs/Ij.bmp
+1			BMPs/Ik.bmp
+1			BMPs/Il.bmp
+1			BMPs/Im.bmp
+1			BMPs/In.bmp
+1			BMPs/Io.bmp
+1			BMPs/Ip.bmp
+1			BMPs/Ir.bmp
+1			BMPs/Is.bmp
+1			BMPs/It.bmp
+1			BMPs/Iu.bmp
+1			BMPs/Iv.bmp
+1			BMPs/Iw.bmp
+1			BMPs/Ix.bmp
+1			BMPs/Iy.bmp
+1			BMPs/Iz.bmp
+1			BMPs/Ja.bmp
+1			BMPs/Jc.bmp
+1			BMPs/Je.bmp
+1			BMPs/Jf.bmp
+1			BMPs/Jg.bmp
+1			BMPs/Jh.bmp
+1			BMPs/Ji.bmp
+1			BMPs/Jk.bmp
+1			BMPs/Jl.bmp
+1			BMPs/Jm.bmp
+1			BMPs/Jn.bmp
+1			BMPs/Jo.bmp
+1			BMPs/Jp.bmp
+1			BMPs/Jr.bmp
+1			BMPs/Js.bmp
+1			BMPs/Jt.bmp
+1			BMPs/Ju.bmp
+1			BMPs/Jv.bmp
+1			BMPs/Jw.bmp
+1			BMPs/Jx.bmp
+1			BMPs/Jy.bmp
+1			BMPs/Jz.bmp
+1			BMPs/Ka.bmp
+1			BMPs/Kc.bmp
+1			BMPs/Ke.bmp
+1			BMPs/Kf.bmp
+1			BMPs/Kg.bmp
+1			BMPs/Kh.bmp
+1			BMPs/Ki.bmp
+1			BMPs/Kj.bmp
+1			BMPs/Kl.bmp
+1			BMPs/Km.bmp
+1			BMPs/Kn.bmp
+1			BMPs/Ko.bmp
+1			BMPs/Kp.bmp
+1			BMPs/Kr.bmp
+1			BMPs/Ks.bmp
+1			BMPs/Kt.bmp
+1			BMPs/Ku.bmp
+1			BMPs/Kv.bmp
+1			BMPs/Kw.bmp
+1			BMPs/Kx.bmp
+1			BMPs/Ky.bmp
+1			BMPs/Kz.bmp
+1			BMPs/La.bmp
+1			BMPs/Lc.bmp
+1			BMPs/Le.bmp
+1			BMPs/Lf.bmp
+1			BMPs/Lg.bmp
+1			BMPs/Lh.bmp
+1			BMPs/Li.bmp
+1			BMPs/Lj.bmp
+1			BMPs/Lk.bmp
+1			BMPs/Lm.bmp
+1			BMPs/Ln.bmp
+1			BMPs/Lo.bmp
+1			BMPs/Lp.bmp
+1			BMPs/Lr.bmp
+1			BMPs/Ls.bmp
+1			BMPs/Lt.bmp
+1			BMPs/Lu.bmp
+1			BMPs/Lv.bmp
+1			BMPs/Lw.bmp
+1			BMPs/Lx.bmp
+1			BMPs/Ly.bmp
+1			BMPs/Lz.bmp
+1			BMPs/Ma.bmp
+1			BMPs/Mc.bmp
+1			BMPs/Me.bmp
+1			BMPs/Mf.bmp
+1			BMPs/Mg.bmp
+1			BMPs/Mh.bmp
+1			BMPs/Mi.bmp
+1			BMPs/Mj.bmp
+1			BMPs/Mk.bmp
+1			BMPs/Ml.bmp
+1			BMPs/Mn.bmp
+1			BMPs/Mo.bmp
+1			BMPs/Mp.bmp
+1			BMPs/Mr.bmp
+1			BMPs/Ms.bmp
+1			BMPs/Mt.bmp
+1			BMPs/Mu.bmp
+1			BMPs/Mv.bmp
+1			BMPs/Mw.bmp
+1			BMPs/Mx.bmp
+1			BMPs/My.bmp
+1			BMPs/Mz.bmp
+1			BMPs/Na.bmp
+1			BMPs/Nc.bmp
+1			BMPs/Ne.bmp
+1			BMPs/Nf.bmp
+1			BMPs/Ng.bmp
+1			BMPs/Nh.bmp
+1			BMPs/Ni.bmp
+1			BMPs/Nj.bmp
+1			BMPs/Nk.bmp
+1			BMPs/Nl.bmp
+1			BMPs/Nm.bmp
+1			BMPs/No.bmp
+1			BMPs/Np.bmp
+1			BMPs/Nr.bmp
+1			BMPs/Ns.bmp
+1			BMPs/Nt.bmp
+1			BMPs/Nu.bmp
+1			BMPs/Nv.bmp
+1			BMPs/Nw.bmp
+1			BMPs/Nx.bmp
+1			BMPs/Ny.bmp
+1			BMPs/Nz.bmp
+1			BMPs/Oa.bmp
+1			BMPs/Oc.bmp
+1			BMPs/Oe.bmp
+1			BMPs/Of.bmp
+1			BMPs/Og.bmp
+1			BMPs/Oh.bmp
+1			BMPs/Oi.bmp
+1			BMPs/Oj.bmp
+1			BMPs/Ok.bmp
+1			BMPs/Ol.bmp
+1			BMPs/Om.bmp
+1			BMPs/On.bmp
+1			BMPs/Op.bmp
+1			BMPs/Or.bmp
+1			BMPs/Os.bmp
+1			BMPs/Ot.bmp
+1			BMPs/Ou.bmp
+1			BMPs/Ov.bmp
+1			BMPs/Ow.bmp
+1			BMPs/Ox.bmp
+1			BMPs/Oy.bmp
+1			BMPs/Oz.bmp
+1			BMPs/Pa.bmp
+1			BMPs/Pc.bmp
+1			BMPs/Pe.bmp
+1			BMPs/Pf.bmp
+1			BMPs/Pg.bmp
+1			BMPs/Ph.bmp
+1			BMPs/Pi.bmp
+1			BMPs/Pj.bmp
+1			BMPs/Pk.bmp
+1			BMPs/Pl.bmp
+1			BMPs/Pm.bmp
+1			BMPs/Pn.bmp
+1			BMPs/Po.bmp
+1			BMPs/Pr.bmp
+1			BMPs/Ps.bmp
+1			BMPs/Pt.bmp
+1			BMPs/Pu.bmp
+1			BMPs/Pv.bmp
+1			BMPs/Pw.bmp
+1			BMPs/Px.bmp
+1			BMPs/Py.bmp
+1			BMPs/Pz.bmp
+1			BMPs/Ra.bmp
+1			BMPs/Rc.bmp
+1			BMPs/Re.bmp
+1			BMPs/Rf.bmp
+1			BMPs/Rg.bmp
+1			BMPs/Rh.bmp
+1			BMPs/Ri.bmp
+1			BMPs/Rj.bmp
+1			BMPs/Rk.bmp
+1			BMPs/Rl.bmp
+1			BMPs/Rm.bmp
+1			BMPs/Rn.bmp
+1			BMPs/Ro.bmp
+1			BMPs/Rp.bmp
+1			BMPs/Rs.bmp
+1			BMPs/Rt.bmp
+1			BMPs/Ru.bmp
+1			BMPs/Rv.bmp
+1			BMPs/Rw.bmp
+1			BMPs/Rx.bmp
+1			BMPs/Ry.bmp
+1			BMPs/Rz.bmp
+1			BMPs/Sa.bmp
+1			BMPs/Sc.bmp
+1			BMPs/Se.bmp
+1			BMPs/Sf.bmp
+1			BMPs/Sg.bmp
+1			BMPs/Sh.bmp
+1			BMPs/Si.bmp
+1			BMPs/Sj.bmp
+1			BMPs/Sk.bmp
+1			BMPs/Sl.bmp
+1			BMPs/Sm.bmp
+1			BMPs/Sn.bmp
+1			BMPs/So.bmp
+1			BMPs/Sp.bmp
+1			BMPs/Sr.bmp
+1			BMPs/St.bmp
+1			BMPs/Su.bmp
+1			BMPs/Sv.bmp
+1			BMPs/Sw.bmp
+1			BMPs/Sx.bmp
+1			BMPs/Sy.bmp
+1			BMPs/Sz.bmp
+1			BMPs/Ta.bmp
+1			BMPs/Tc.bmp
+1			BMPs/Te.bmp
+1			BMPs/Tf.bmp
+1			BMPs/Tg.bmp
+1			BMPs/Th.bmp
+1			BMPs/Ti.bmp
+1			BMPs/Tj.bmp
+1			BMPs/Tk.bmp
+1			BMPs/Tl.bmp
+1			BMPs/Tm.bmp
+1			BMPs/Tn.bmp
+1			BMPs/To.bmp
+1			BMPs/Tp.bmp
+1			BMPs/Tr.bmp
+1			BMPs/Ts.bmp
+1			BMPs/Tu.bmp
+1			BMPs/Tv.bmp
+1			BMPs/Tw.bmp
+1			BMPs/Tx.bmp
+1			BMPs/Ty.bmp
+1			BMPs/Tz.bmp
+1			BMPs/Ua.bmp
+1			BMPs/Uc.bmp
+1			BMPs/Ue.bmp
+1			BMPs/Uf.bmp
+1			BMPs/Ug.bmp
+1			BMPs/Uh.bmp
+1			BMPs/Ui.bmp
+1			BMPs/Uj.bmp
+1			BMPs/Uk.bmp
+1			BMPs/Ul.bmp
+1			BMPs/Um.bmp
+1			BMPs/Un.bmp
+1			BMPs/Uo.bmp
+1			BMPs/Up.bmp
+1			BMPs/Ur.bmp
+1			BMPs/Us.bmp
+1			BMPs/Ut.bmp
+1			BMPs/Uv.bmp
+1			BMPs/Uw.bmp
+1			BMPs/Ux.bmp
+1			BMPs/Uy.bmp
+1			BMPs/Uz.bmp
+1			BMPs/Va.bmp
+1			BMPs/Vc.bmp
+1			BMPs/Ve.bmp
+1			BMPs/Vf.bmp
+1			BMPs/Vg.bmp
+1			BMPs/Vh.bmp
+1			BMPs/Vi.bmp
+1			BMPs/Vj.bmp
+1			BMPs/Vk.bmp
+1			BMPs/Vl.bmp
+1			BMPs/Vm.bmp
+1			BMPs/Vn.bmp
+1			BMPs/Vo.bmp
+1			BMPs/Vp.bmp
+1			BMPs/Vr.bmp
+1			BMPs/Vs.bmp
+1			BMPs/Vt.bmp
+1			BMPs/Vu.bmp
+1			BMPs/Vw.bmp
+1			BMPs/Vx.bmp
+1			BMPs/Vy.bmp
+1			BMPs/Vz.bmp
+1			BMPs/Wa.bmp
+1			BMPs/Wc.bmp
+1			BMPs/We.bmp
+1			BMPs/Wf.bmp
+1			BMPs/Wg.bmp
+1			BMPs/Wh.bmp
+1			BMPs/Wi.bmp
+1			BMPs/Wj.bmp
+1			BMPs/Wk.bmp
+1			BMPs/Wl.bmp
+1			BMPs/Wm.bmp
+1			BMPs/Wn.bmp
+1			BMPs/Wo.bmp
+1			BMPs/Wp.bmp
+1			BMPs/Wr.bmp
+1			BMPs/Ws.bmp
+1			BMPs/Wt.bmp
+1			BMPs/Wu.bmp
+1			BMPs/Wv.bmp
+1			BMPs/Wx.bmp
+1			BMPs/Wy.bmp
+1			BMPs/Wz.bmp
+1			BMPs/Xa.bmp
+1			BMPs/Xc.bmp
+1			BMPs/Xe.bmp
+1			BMPs/Xf.bmp
+1			BMPs/Xg.bmp
+1			BMPs/Xh.bmp
+1			BMPs/Xi.bmp
+1			BMPs/Xj.bmp
+1			BMPs/Xk.bmp
+1			BMPs/Xl.bmp
+1			BMPs/Xm.bmp
+1			BMPs/Xn.bmp
+1			BMPs/Xo.bmp
+1			BMPs/Xp.bmp
+1			BMPs/Xr.bmp
+1			BMPs/Xs.bmp
+1			BMPs/Xt.bmp
+1			BMPs/Xu.bmp
+1			BMPs/Xv.bmp
+1			BMPs/Xw.bmp
+1			BMPs/Xy.bmp
+1			BMPs/Xz.bmp
+1			BMPs/Ya.bmp
+1			BMPs/Yc.bmp
+1			BMPs/Ye.bmp
+1			BMPs/Yf.bmp
+1			BMPs/Yg.bmp
+1			BMPs/Yh.bmp
+1			BMPs/Yi.bmp
+1			BMPs/Yj.bmp
+1			BMPs/Yk.bmp
+1			BMPs/Yl.bmp
+1			BMPs/Ym.bmp
+1			BMPs/Yn.bmp
+1			BMPs/Yo.bmp
+1			BMPs/Yp.bmp
+1			BMPs/Yr.bmp
+1			BMPs/Ys.bmp
+1			BMPs/Yt.bmp
+1			BMPs/Yu.bmp
+1			BMPs/Yv.bmp
+1			BMPs/Yw.bmp
+1			BMPs/Yx.bmp
+1			BMPs/Yz.bmp
+1			BMPs/Za.bmp
+1			BMPs/Zc.bmp
+1			BMPs/Ze.bmp
+1			BMPs/Zf.bmp
+1			BMPs/Zg.bmp
+1			BMPs/Zh.bmp
+1			BMPs/Zi.bmp
+1			BMPs/Zj.bmp
+1			BMPs/Zk.bmp
+1			BMPs/Zl.bmp
+1			BMPs/Zm.bmp
+1			BMPs/Zn.bmp
+1			BMPs/Zo.bmp
+1			BMPs/Zp.bmp
+1			BMPs/Zr.bmp
+1			BMPs/Zs.bmp
+1			BMPs/Zt.bmp
+1			BMPs/Zu.bmp
+1			BMPs/Zv.bmp
+1			BMPs/Zw.bmp
+1			BMPs/Zx.bmp
+1			BMPs/Zy.bmp\0
 
 [DataSection_iapslist(1)]
 Weight	Nested	Procedure	filename	valence	arosual	tag	emotion
