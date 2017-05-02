@@ -1,0 +1,9 @@
+Stimulus 1: (X,Y) = (50%, 15%)
+Stimulus 2: (X,Y) = (71%, 28%)
+Stimulus 3: (X,Y) = (80%, 50%)
+Stimulus 4: (X,Y) = (71%, 73%)
+Stimulus 5: (X,Y) = (50%, 85%)
+Stimulus 6: (X,Y) = (29%, 73%)
+Stimulus 7: (X,Y) = (20%, 50%)
+Stimulus 8: (X,Y) = (29%, 27%)
+

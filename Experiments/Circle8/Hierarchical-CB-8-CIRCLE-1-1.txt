@@ -1,0 +1,443 @@
+*** Header Start ***
+VersionPersist: 1
+LevelName: Session
+LevelName: Block
+LevelName: Trial
+LevelName: SubTrial
+LevelName: LogLevel5
+LevelName: LogLevel6
+LevelName: LogLevel7
+LevelName: LogLevel8
+LevelName: LogLevel9
+LevelName: LogLevel10
+Experiment: Hierarchical-CB-8-CIRCLE
+SessionDate: 05-02-2017
+SessionTime: 21:40:55
+Subject: 1
+Session: 1
+Name: 
+Age: 0
+Sex: mujer
+Handedness: diestro
+RandomSeed: 1447494357
+Group: 1
+Display.RefreshRate: 0.000
+*** Header End ***
+		Level: 3
+		*** LogFrame Start ***
+		Procedure: trialproc
+		s1: BMPs/Lj.bmp
+		s2: BMPs/Sw.bmp
+		s3: BMPs/Fn.bmp
+		s4: BMPs/Gi.bmp
+		s5: BMPs/Fw.bmp
+		s6: BMPs/Cv.bmp
+		s7: BMPs/Gt.bmp
+		s8: BMPs/Ya.bmp
+		s9: BMPs/Ke.bmp
+		x9: 50
+		y9: 85
+		changecorrect: 5
+		positions: 5
+		x: 50
+		y: 85
+		positionum: 5
+		stimuli: 267
+		stimulus: BMPs/Ne.bmp
+		triallistp: 6
+		Running: triallistp
+		triallistp.Cycle: 1
+		triallistp.Sample: 1
+		matrix1.OnsetDelay: 4
+		matrix1.OnsetTime: 6607
+		matrix1.DurationError: 0
+		matrix1.RTTime: 15169
+		matrix1.ACC: 0
+		matrix1.RT: 8562
+		matrix1.RESP: {SPACE}
+		matrix1.CRESP: 
+		blank.OnsetDelay: 1
+		blank.OnsetTime: 15671
+		blank.DurationError: 0
+		rating.OnsetDelay: 5
+		rating.OnsetTime: 15677
+		rating.DurationError: -999999
+		rating.RTTime: 16258
+		rating.ACC: 0
+		rating.RT: 581
+		rating.RESP: 1
+		rating.CRESP: 
+		Rating: 5
+		changedetected: 5
+		Accuracy: 1
+		*** LogFrame End ***
+		Level: 3
+		*** LogFrame Start ***
+		Procedure: trialproc
+		s1: BMPs/Rw.bmp
+		s2: BMPs/Jg.bmp
+		s3: BMPs/Jc.bmp
+		s4: BMPs/Ku.bmp
+		s5: BMPs/Hn.bmp
+		s6: BMPs/Yx.bmp
+		s7: BMPs/Nw.bmp
+		s8: BMPs/Dv.bmp
+		s9: BMPs/Om.bmp
+		x9: 29
+		y9: 73
+		changecorrect: 6
+		positions: 6
+		x: 29
+		y: 73
+		positionum: 6
+		stimuli: 235
+		stimulus: BMPs/Ls.bmp
+		triallistp: 9
+		Running: triallistp
+		triallistp.Cycle: 1
+		triallistp.Sample: 2
+		matrix1.OnsetDelay: 4
+		matrix1.OnsetTime: 19519
+		matrix1.DurationError: 0
+		matrix1.RTTime: 35881
+		matrix1.ACC: 0
+		matrix1.RT: 16362
+		matrix1.RESP: {SPACE}
+		matrix1.CRESP: 
+		blank.OnsetDelay: 1
+		blank.OnsetTime: 36383
+		blank.DurationError: 0
+		rating.OnsetDelay: 4
+		rating.OnsetTime: 36388
+		rating.DurationError: -999999
+		rating.RTTime: 36738
+		rating.ACC: 0
+		rating.RT: 350
+		rating.RESP: 1
+		rating.CRESP: 
+		Rating: 6
+		changedetected: 6
+		Accuracy: 1
+		*** LogFrame End ***
+	Level: 2
+	*** LogFrame Start ***
+	practisexp: practice
+	Procedure: blockprocp
+	blocklistp: 1
+	blocklistp.Cycle: 1
+	blocklistp.Sample: 1
+	Running: blocklistp
+	*** LogFrame End ***
+		Level: 3
+		*** LogFrame Start ***
+		Procedure: trialproc
+		triallist: 37
+		s1: BMPs/Cs.bmp
+		s2: BMPs/Zi.bmp
+		s3: BMPs/Lp.bmp
+		s4: BMPs/Ma.bmp
+		s5: BMPs/Kh.bmp
+		s6: BMPs/Hf.bmp
+		s7: BMPs/Il.bmp
+		s8: BMPs/Ic.bmp
+		s9: BMPs/Te.bmp
+		x9: 29
+		y9: 27
+		changecorrect: 8
+		positions: 8
+		x: 29
+		y: 27
+		positionum: 8
+		stimuli: 248
+		stimulus: BMPs/Mh.bmp
+		Running: triallist
+		matrix1.OnsetDelay: 4
+		matrix1.OnsetTime: 46358
+		matrix1.DurationError: 0
+		matrix1.RTTime: 51161
+		matrix1.ACC: 0
+		matrix1.RT: 4803
+		matrix1.RESP: {SPACE}
+		matrix1.CRESP: 
+		blank.OnsetDelay: 1
+		blank.OnsetTime: 51663
+		blank.DurationError: 0
+		rating.OnsetDelay: 4
+		rating.OnsetTime: 51668
+		rating.DurationError: -999999
+		rating.RTTime: 53697
+		rating.ACC: 0
+		rating.RT: 2029
+		rating.RESP: 1
+		rating.CRESP: 
+		Rating: 8
+		changedetected: 8
+		Accuracy: 1
+		triallist.Cycle: 1
+		triallist.Sample: 1
+		*** LogFrame End ***
+		Level: 3
+		*** LogFrame Start ***
+		Procedure: trialproc
+		triallist: 11
+		s1: BMPs/Kc.bmp
+		s2: BMPs/Ew.bmp
+		s3: BMPs/Ws.bmp
+		s4: BMPs/Tr.bmp
+		s5: BMPs/Lh.bmp
+		s6: BMPs/Dx.bmp
+		s7: BMPs/Wf.bmp
+		s8: BMPs/Xk.bmp
+		s9: BMPs/Nz.bmp
+		x9: 80
+		y9: 50
+		changecorrect: 3
+		positions: 3
+		x: 80
+		y: 50
+		positionum: 3
+		stimuli: 339
+		stimulus: BMPs/Rk.bmp
+		Running: triallist
+		matrix1.OnsetDelay: 4
+		matrix1.OnsetTime: 57055
+		matrix1.DurationError: 0
+		matrix1.RTTime: 60457
+		matrix1.ACC: 0
+		matrix1.RT: 3402
+		matrix1.RESP: {SPACE}
+		matrix1.CRESP: 
+		blank.OnsetDelay: 1
+		blank.OnsetTime: 60959
+		blank.DurationError: 0
+		rating.OnsetDelay: 4
+		rating.OnsetTime: 60964
+		rating.DurationError: -999999
+		rating.RTTime: 61497
+		rating.ACC: 0
+		rating.RT: 533
+		rating.RESP: 1
+		rating.CRESP: 
+		Rating: 3
+		changedetected: 3
+		Accuracy: 1
+		triallist.Cycle: 1
+		triallist.Sample: 2
+		*** LogFrame End ***
+		Level: 3
+		*** LogFrame Start ***
+		Procedure: trialproc
+		triallist: 87
+		s1: BMPs/Kv.bmp
+		s2: BMPs/Ki.bmp
+		s3: BMPs/Gx.bmp
+		s4: BMPs/Jf.bmp
+		s5: BMPs/Wu.bmp
+		s6: BMPs/Yj.bmp
+		s7: BMPs/Rz.bmp
+		s8: BMPs/Uk.bmp
+		s9: BMPs/Js.bmp
+		x9: 50
+		y9: 15
+		changecorrect: 1
+		positions: 1
+		x: 50
+		y: 15
+		positionum: 1
+		stimuli: 24
+		stimulus: BMPs/Ce.bmp
+		Running: triallist
+		matrix1.OnsetDelay: 4
+		matrix1.OnsetTime: 64694
+		matrix1.DurationError: 0
+		matrix1.RTTime: 69801
+		matrix1.ACC: 0
+		matrix1.RT: 5107
+		matrix1.RESP: {SPACE}
+		matrix1.CRESP: 
+		blank.OnsetDelay: 1
+		blank.OnsetTime: 70303
+		blank.DurationError: 0
+		rating.OnsetDelay: 4
+		rating.OnsetTime: 70308
+		rating.DurationError: -999999
+		rating.RTTime: 71106
+		rating.ACC: 0
+		rating.RT: 798
+		rating.RESP: 1
+		rating.CRESP: 
+		Rating: 1
+		changedetected: 1
+		Accuracy: 1
+		triallist.Cycle: 1
+		triallist.Sample: 3
+		*** LogFrame End ***
+		Level: 3
+		*** LogFrame Start ***
+		Procedure: trialproc
+		triallist: 45
+		s1: BMPs/Oy.bmp
+		s2: BMPs/Ez.bmp
+		s3: BMPs/Ie.bmp
+		s4: BMPs/Ul.bmp
+		s5: BMPs/Af.bmp
+		s6: BMPs/Tu.bmp
+		s7: BMPs/Un.bmp
+		s8: BMPs/Pn.bmp
+		s9: BMPs/Ht.bmp
+		x9: 71
+		y9: 28
+		changecorrect: 2
+		positions: 2
+		x: 71
+		y: 28
+		positionum: 2
+		stimuli: 294
+		stimulus: BMPs/Oj.bmp
+		Running: triallist
+		matrix1.OnsetDelay: 4
+		matrix1.OnsetTime: 74246
+		matrix1.DurationError: 0
+		matrix1.RTTime: 80417
+		matrix1.ACC: 0
+		matrix1.RT: 6171
+		matrix1.RESP: {SPACE}
+		matrix1.CRESP: 
+		blank.OnsetDelay: 1
+		blank.OnsetTime: 80919
+		blank.DurationError: 0
+		rating.OnsetDelay: 4
+		rating.OnsetTime: 80924
+		rating.DurationError: -999999
+		rating.RTTime: 81609
+		rating.ACC: 0
+		rating.RT: 685
+		rating.RESP: 1
+		rating.CRESP: 
+		Rating: 2
+		changedetected: 2
+		Accuracy: 1
+		triallist.Cycle: 1
+		triallist.Sample: 4
+		*** LogFrame End ***
+		Level: 3
+		*** LogFrame Start ***
+		Procedure: trialproc
+		triallist: 72
+		s1: BMPs/Vc.bmp
+		s2: BMPs/Aw.bmp
+		s3: BMPs/Yr.bmp
+		s4: BMPs/Mt.bmp
+		s5: BMPs/Kw.bmp
+		s6: BMPs/Rj.bmp
+		s7: BMPs/Vp.bmp
+		s8: BMPs/Ze.bmp
+		s9: BMPs/Mn.bmp
+		x9: 71
+		y9: 73
+		changecorrect: 4
+		positions: 4
+		x: 71
+		y: 73
+		positionum: 4
+		stimuli: 164
+		stimulus: BMPs/Im.bmp
+		Running: triallist
+		matrix1.OnsetDelay: 4
+		matrix1.OnsetTime: 84703
+		matrix1.DurationError: 0
+		matrix1.RTTime: 94945
+		matrix1.ACC: 0
+		matrix1.RT: 10242
+		matrix1.RESP: {SPACE}
+		matrix1.CRESP: 
+		blank.OnsetDelay: 1
+		blank.OnsetTime: 95447
+		blank.DurationError: 0
+		rating.OnsetDelay: 4
+		rating.OnsetTime: 95452
+		rating.DurationError: -999999
+		rating.RTTime: 106770
+		rating.ACC: 0
+		rating.RT: 11318
+		rating.RESP: 1
+		rating.CRESP: 
+		Rating: 4
+		changedetected: 4
+		Accuracy: 1
+		triallist.Cycle: 1
+		triallist.Sample: 5
+		*** LogFrame End ***
+		Level: 3
+		*** LogFrame Start ***
+		Procedure: trialproc
+		triallist: 1
+		s1: BMPs/Yv.bmp
+		s2: BMPs/Ga.bmp
+		s3: BMPs/Tm.bmp
+		s4: BMPs/Xn.bmp
+		s5: BMPs/Mu.bmp
+		s6: BMPs/Ek.bmp
+		s7: BMPs/Gh.bmp
+		s8: BMPs/Yf.bmp
+		s9: BMPs/Fc.bmp
+		x9: 20
+		y9: 50
+		changecorrect: 7
+		positions: 7
+		x: 20
+		y: 50
+		positionum: 7
+		stimuli: 84
+		stimulus: BMPs/Ev.bmp
+		Running: triallist
+		matrix1.OnsetDelay: 4
+		matrix1.OnsetTime: 110646
+		matrix1.DurationError: 0
+		matrix1.RTTime: 0
+		matrix1.ACC: 0
+		matrix1.RT: 0
+		matrix1.RESP: 
+		matrix1.CRESP: 
+		blank.OnsetDelay: 1
+		blank.OnsetTime: 126615
+		blank.DurationError: 0
+		rating.OnsetDelay: 4
+		rating.OnsetTime: 126620
+		rating.DurationError: -999999
+		rating.RTTime: 127249
+		rating.ACC: 0
+		rating.RT: 629
+		rating.RESP: 1
+		rating.CRESP: 
+		Rating: 7
+		changedetected: 7
+		Accuracy: 1
+		triallist.Cycle: 1
+		triallist.Sample: 6
+		*** LogFrame End ***
+	Level: 2
+	*** LogFrame Start ***
+	blocklist: 1
+	practisexp: experimental
+	Procedure: blockproc
+	Running: blocklist
+	blocklist.Cycle: 1
+	blocklist.Sample: 1
+	*** LogFrame End ***
+Level: 1
+*** LogFrame Start ***
+Experiment: Hierarchical-CB-8-CIRCLE
+SessionDate: 05-02-2017
+SessionTime: 21:40:55
+Subject: 1
+Session: 1
+Name: 
+Age: 0
+Sex: mujer
+Handedness: diestro
+RandomSeed: 1447494357
+Group: 1
+Display.RefreshRate: 0.000
+Clock.Information: <?xml version="1.0"?>\n<Clock xmlns:dt="urn:schemas-microsoft-com:datatypes"><Description dt:dt="string">E-Prime Primary Realtime Clock</Description><StartTime><Timestamp dt:dt="int">0</Timestamp><DateUtc dt:dt="string">2017-05-02T19:40:55Z</DateUtc></StartTime><FrequencyChanges><FrequencyChange><Frequency dt:dt="r8">10000000</Frequency><Timestamp dt:dt="r8">40100244609</Timestamp><Current dt:dt="r8">0</Current><DateUtc dt:dt="string">2017-05-02T19:40:55Z</DateUtc></FrequencyChange></FrequencyChanges></Clock>\n
+*** LogFrame End ***
