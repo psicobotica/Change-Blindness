@@ -1,0 +1,84 @@
+*** Header Start ***
+VersionPersist: 1
+LevelName: Session
+LevelName: Block
+LevelName: Trial
+LevelName: SubTrial
+LevelName: LogLevel5
+LevelName: LogLevel6
+LevelName: LogLevel7
+LevelName: LogLevel8
+LevelName: LogLevel9
+LevelName: LogLevel10
+Experiment: Hierarchical-CB-8-CIRCLE
+SessionDate: 04-27-2017
+SessionTime: 12:45:00
+Subject: 1
+Session: 1
+Name: 
+Age: 0
+Sex: mujer
+Handedness: diestro
+RandomSeed: 1652345033
+Group: 1
+Display.RefreshRate: 0.000
+*** Header End ***
+		Level: 3
+		*** LogFrame Start ***
+		Procedure: trialproc
+		s1: images/Af.bmp
+		s2: images/Ac.bmp
+		s3: images/An.bmp
+		s4: images/Af.bmp
+		s5: images/Az.bmp
+		s6: images/Ac.bmp
+		s7: images/An.bmp
+		s8: images/Az.bmp
+		s9: images/Af.bmp
+		x9: 75
+		y9: 50
+		changecorrect: 3
+		positions: 3
+		x: 75
+		y: 50
+		positionum: 3
+		stimuli: 4
+		stimulus: images/Az.bmp
+		triallistp: 1
+		Running: triallistp
+		triallistp.Cycle: 1
+		triallistp.Sample: 1
+		matrix1.OnsetDelay: 4
+		matrix1.OnsetTime: 17210
+		matrix1.DurationError: 0
+		matrix1.RTTime: 0
+		matrix1.ACC: 0
+		matrix1.RT: 0
+		matrix1.RESP: 
+		matrix1.CRESP: 
+		*** LogFrame End ***
+	Level: 2
+	*** LogFrame Start ***
+	practisexp: practice
+	Procedure: blockprocp
+	blocklistp: 1
+	blocklistp.Cycle: 1
+	blocklistp.Sample: 1
+	Running: blocklistp
+	*** LogFrame End ***
+Level: 1
+*** LogFrame Start ***
+Experiment: Hierarchical-CB-8-CIRCLE
+SessionDate: 04-27-2017
+SessionTime: 12:45:00
+Subject: 1
+Session: 1
+Name: 
+Age: 0
+Sex: mujer
+Handedness: diestro
+RandomSeed: 1652345033
+Group: 1
+Display.RefreshRate: 0.000
+Clock.Information: <?xml version="1.0"?>\n<Clock xmlns:dt="urn:schemas-microsoft-com:datatypes"><Description dt:dt="string">E-Prime Primary Realtime Clock</Description><StartTime><Timestamp dt:dt="int">0</Timestamp><DateUtc dt:dt="string">2017-04-27T10:45:00Z</DateUtc></StartTime><FrequencyChanges><FrequencyChange><Frequency dt:dt="r8">10000000</Frequency><Timestamp dt:dt="r8">508456478476</Timestamp><Current dt:dt="r8">0</Current><DateUtc dt:dt="string">2017-04-27T10:45:00Z</DateUtc></FrequencyChange></FrequencyChanges></Clock>\n
+*** LogFrame End ***
