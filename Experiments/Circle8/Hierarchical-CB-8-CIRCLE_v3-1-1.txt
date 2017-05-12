@@ -1,0 +1,150 @@
+*** Header Start ***
+VersionPersist: 1
+LevelName: Session
+LevelName: Block
+LevelName: Trial
+LevelName: SubTrial
+LevelName: LogLevel5
+LevelName: LogLevel6
+LevelName: LogLevel7
+LevelName: LogLevel8
+LevelName: LogLevel9
+LevelName: LogLevel10
+Experiment: Hierarchical-CB-8-CIRCLE_v3
+SessionDate: 05-12-2017
+SessionTime: 05:46:11
+Subject: 1
+Session: 1
+Name: 
+Age: 0
+Sex: mujer
+Handedness: diestro
+RandomSeed: -2114087356
+Group: 1
+Display.RefreshRate: 0.000
+*** Header End ***
+		Level: 3
+		*** LogFrame Start ***
+		Procedure: trialproc
+		s1: BMPs/Ou.bmp
+		s2: BMPs/Um.bmp
+		s3: BMPs/Ef.bmp
+		s4: BMPs/Ez.bmp
+		s5: BMPs/Cf.bmp
+		s6: BMPs/Fc.bmp
+		s7: BMPs/Hm.bmp
+		s8: BMPs/Zf.bmp
+		s9: BMPs/Ec.bmp
+		x9: 29
+		y9: 27
+		changecorrect: 8
+		positions: 8
+		x: 29
+		y: 27
+		positionum: 8
+		stimuli: 43
+		stimulus: BMPs/He.bmp
+		Global: H
+		Local: E
+		triallistp: 4
+		Running: triallistp
+		triallistp.Cycle: 1
+		triallistp.Sample: 1
+		matrix1.OnsetDelay: 4
+		matrix1.OnsetTime: 7722
+		matrix1.DurationError: 0
+		matrix1.RTTime: 10909
+		matrix1.ACC: 0
+		matrix1.RT: 3187
+		matrix1.RESP: {SPACE}
+		matrix1.CRESP: 
+		blank.OnsetDelay: 1
+		blank.OnsetTime: 11411
+		blank.DurationError: 0
+		rating.OnsetDelay: 5
+		rating.OnsetTime: 11417
+		rating.DurationError: -999999
+		rating.RTTime: 11813
+		rating.ACC: 0
+		rating.RT: 396
+		rating.RESP: 1
+		rating.CRESP: 
+		Rating: 8
+		changedetected: 8
+		Accuracy: 1
+		*** LogFrame End ***
+		Level: 3
+		*** LogFrame Start ***
+		Procedure: trialproc
+		s1: BMPs/Oa.bmp
+		s2: BMPs/Hf.bmp
+		s3: BMPs/Mz.bmp
+		s4: BMPs/Km.bmp
+		s5: BMPs/Of.bmp
+		s6: BMPs/Em.bmp
+		s7: BMPs/Cm.bmp
+		s8: BMPs/Zo.bmp
+		s9: BMPs/Ok.bmp
+		x9: 20
+		y9: 50
+		changecorrect: 7
+		positions: 7
+		x: 20
+		y: 50
+		positionum: 7
+		stimuli: 72
+		stimulus: BMPs/Nc.bmp
+		Global: N
+		Local: C
+		triallistp: 5
+		Running: triallistp
+		triallistp.Cycle: 1
+		triallistp.Sample: 2
+		matrix1.OnsetDelay: 4
+		matrix1.OnsetTime: 14658
+		matrix1.DurationError: 0
+		matrix1.RTTime: 0
+		matrix1.ACC: 0
+		matrix1.RT: 0
+		matrix1.RESP: 
+		matrix1.CRESP: 
+		blank.OnsetDelay: 1
+		blank.OnsetTime: 27691
+		blank.DurationError: 0
+		rating.OnsetDelay: 4
+		rating.OnsetTime: 27696
+		rating.DurationError: -999999
+		rating.RTTime: 28078
+		rating.ACC: 0
+		rating.RT: 382
+		rating.RESP: 1
+		rating.CRESP: 
+		Rating: 7
+		changedetected: 7
+		Accuracy: 1
+		*** LogFrame End ***
+	Level: 2
+	*** LogFrame Start ***
+	practisexp: practice
+	Procedure: blockprocp
+	blocklistp: 1
+	blocklistp.Cycle: 1
+	blocklistp.Sample: 1
+	Running: blocklistp
+	*** LogFrame End ***
+Level: 1
+*** LogFrame Start ***
+Experiment: Hierarchical-CB-8-CIRCLE_v3
+SessionDate: 05-12-2017
+SessionTime: 05:46:11
+Subject: 1
+Session: 1
+Name: 
+Age: 0
+Sex: mujer
+Handedness: diestro
+RandomSeed: -2114087356
+Group: 1
+Display.RefreshRate: 0.000
+Clock.Information: <?xml version="1.0"?>\n<Clock xmlns:dt="urn:schemas-microsoft-com:datatypes"><Description dt:dt="string">E-Prime Primary Realtime Clock</Description><StartTime><Timestamp dt:dt="int">0</Timestamp><DateUtc dt:dt="string">2017-05-12T03:46:10Z</DateUtc></StartTime><FrequencyChanges><FrequencyChange><Frequency dt:dt="r8">10000000</Frequency><Timestamp dt:dt="r8">182567473905</Timestamp><Current dt:dt="r8">0</Current><DateUtc dt:dt="string">2017-05-12T03:46:10Z</DateUtc></FrequencyChange></FrequencyChanges></Clock>\n
+*** LogFrame End ***
