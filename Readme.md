@@ -11,6 +11,7 @@
 * **Scripts**: Python notebooks to process stimuli data
 	* LoadStimuliTable: load all stimuli from a dir into a CSV file. 
 	* GenTrials: generates all possible trials from a stimuli set file.
+	* Data_Analysis: several data analysis and graph generation scripts
 	
 * **Experiments**: Experiment definitions
 	* CSVs and Excel sheets: experiments trial sets. 
